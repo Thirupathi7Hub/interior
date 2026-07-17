@@ -13,7 +13,11 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (window.lenis) {
+      window.lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo(0, 0);
+    }
   }, [pathname]);
 
   return null;
@@ -31,6 +35,8 @@ export default function App() {
       touchMultiplier: 2,
     });
 
+    window.lenis = lenis;
+
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -40,6 +46,7 @@ export default function App() {
 
     return () => {
       cancelAnimationFrame(rafId);
+      window.lenis = null;
       lenis.destroy();
     };
   }, []);
