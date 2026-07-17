@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: auto; /* Lenis handles this */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-charcoal-800 text-ivory-200 font-sans;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    @apply bg-bronze text-ivory-50;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-charcoal-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-bronze;
+  }
+}
+
+@layer components {
+  .container-studio {
+    @apply max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 xl:px-16;
+  }
+
+  .text-display {
+    @apply font-display font-light text-ivory-200 leading-[0.9] tracking-tight;
+  }
+
+  .text-heading {
+    @apply font-serif font-medium text-ivory-200 leading-tight;
+  }
+
+  .text-label {
+    @apply font-sans text-xs uppercase tracking-widest text-taupe;
+  }
+
+  .text-body {
+    @apply font-sans font-light text-taupe leading-relaxed;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-3 px-8 py-4 border border-ivory-200/30 
+           text-ivory-200 text-xs uppercase tracking-widest font-sans
+           transition-all duration-500 ease-expo-out
+           hover:bg-ivory-200 hover:text-charcoal-800 hover:border-ivory-200;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-3 text-xs uppercase tracking-widest font-sans
+           text-ivory-200 transition-all duration-300
+           hover:text-bronze;
+  }
+
+  .line-accent {
+    @apply block h-px bg-bronze origin-left;
+  }
+
+  .clip-reveal {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  .image-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-charcoal-900/70 via-charcoal-900/20 to-transparent;
+  }
+
+  .nav-link {
+    @apply text-xs uppercase tracking-widest font-sans transition-colors duration-300
+           text-ivory-200/70 hover:text-ivory-200 relative;
+  }
+
+  .section-padding {
+    @apply py-24 lg:py-36;
+  }
+
+  .grain-overlay {
+    @apply pointer-events-none fixed inset-0 z-[9999] opacity-[0.03] mix-blend-overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 200px;
+    pointer-events: none;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 1px currentColor;
+    color: transparent;
+  }
+}
+
+/* Page transition overlay */
+.page-transition-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: #1a1a1a;
+  pointer-events: none;
+}
+
+/* Hero slider specific styles */
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  will-change: transform, opacity;
+}
+
+/* Number counter */
+.stat-number {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom cursor */
+.cursor-custom {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+/* Magnetic button effect */
+.magnetic-btn {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Image parallax container */
+.parallax-container {
+  overflow: hidden;
+}
+
+.parallax-image {
+  will-change: transform;
+  transform-origin: center;
+}
+
+/* Stagger animation children */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Masonry layout */
+.masonry-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Text reveal clip */
+.text-reveal {
+  overflow: hidden;
+}
+
+.text-reveal > * {
+  display: inline-block;
+  transform: translateY(100%);
+}
+
+/* Smooth scrollbar hide for hero */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Premium focus styles */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: rgba(160, 128, 96, 0.6);
+}
+
+/* Video/image object fit */
+.object-cover-full {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
