@@ -58,7 +58,7 @@ export default function PhilosophySection() {
   return (
     <section
       ref={ref}
-      className="relative py-32 lg:py-48 overflow-hidden bg-charcoal-900"
+      className="relative py-16 lg:py-24 overflow-hidden bg-charcoal-900"
     >
       {/* Background image with parallax */}
       <motion.div

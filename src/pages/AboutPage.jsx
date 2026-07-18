@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <div className="pt-24 bg-charcoal-800">
       {/* Hero header */}
-      <section className="py-20 lg:py-28">
+      <section className="py-10 lg:py-14">
         <div className="container-studio">
           <motion.p
             variants={fadeUp}
@@ -83,7 +83,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats */}
-      <section className="py-20 lg:py-28 bg-charcoal-900">
+      <section className="py-10 lg:py-14 bg-charcoal-900">
         <div className="container-studio">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
             {STUDIO_INFO.stats.map((stat, i) => (
@@ -95,7 +95,7 @@ export default function AboutPage() {
 
       {/* Designer profile */}
       {TEAM.map((member) => (
-        <section key={member.name} className="py-20 lg:py-28 container-studio">
+        <section key={member.name} className="py-10 lg:py-14 container-studio">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
             <motion.div
               initial={{ opacity: 0, y: 40, scale: 1.02 }}
@@ -180,7 +180,7 @@ export default function AboutPage() {
       ))}
 
       {/* Design Philosophy */}
-      <section className="py-20 lg:py-28 bg-charcoal-900">
+      <section className="py-10 lg:py-14 bg-charcoal-900">
         <div className="container-studio max-w-3xl">
           <motion.p
             variants={fadeUp}
@@ -223,7 +223,7 @@ export default function AboutPage() {
       </section>
 
       {/* Selected projects */}
-      <section className="py-20 lg:py-28 container-studio">
+      <section className="py-10 lg:py-14 container-studio">
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -270,7 +270,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-charcoal-900 text-center">
+      <section className="py-10 bg-charcoal-900 text-center">
         <div className="container-studio">
           <motion.h2
             variants={fadeUp}
