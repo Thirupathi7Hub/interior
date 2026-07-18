@@ -40,42 +40,26 @@ export default function ProjectDetailPage() {
 
   return (
     <article className="bg-charcoal-800">
-      {/* Hero */}
-      <section ref={heroRef} className="relative h-[85vh] overflow-hidden">
-        <motion.div
-          style={{ y: heroImageY }}
-          className="absolute inset-[-10%] z-0"
-        >
-          <img
-            src={project.heroImage}
-            alt={project.title}
-            className="w-full h-full object-cover"
-            loading="eager"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-charcoal-800 via-charcoal-900/40 to-charcoal-900/30" />
-        </motion.div>
+      {/* Header */}
+      <section className="pt-32 pb-16 bg-charcoal-900 border-b border-ivory-200/5">
+        <div className="container-studio relative">
+          {/* Back button */}
+          <motion.button
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            onClick={() => navigate(-1)}
+            className="flex items-center gap-2 text-ivory-200/60 hover:text-ivory-200 transition-colors duration-300 text-xs uppercase tracking-widest font-sans mb-8"
+          >
+            <ArrowLeft size={14} />
+            Back
+          </motion.button>
 
-        {/* Back button */}
-        <motion.button
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          onClick={() => navigate(-1)}
-          className="absolute top-24 left-4 sm:left-8 lg:left-16 z-20 flex items-center gap-2 text-ivory-200/60 hover:text-ivory-200 transition-colors duration-300 text-xs uppercase tracking-widest font-sans"
-        >
-          <ArrowLeft size={14} />
-          Back
-        </motion.button>
-
-        <motion.div
-          style={{ opacity: heroOpacity }}
-          className="absolute bottom-0 left-0 right-0 z-10 pb-12 lg:pb-20"
-        >
-          <div className="container-studio">
+          <div>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
               className="text-label text-bronze mb-4"
             >
               {project.category}
@@ -83,7 +67,7 @@ export default function ProjectDetailPage() {
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
+              transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
               className="font-display text-5xl sm:text-6xl lg:text-8xl font-light text-ivory-200 leading-[0.9] mb-6"
             >
               {project.title}
@@ -92,7 +76,7 @@ export default function ProjectDetailPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.5 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
               className="flex flex-wrap items-center gap-6 text-ivory-200/60 text-xs font-sans"
             >
               <span className="flex items-center gap-2">
@@ -111,7 +95,7 @@ export default function ProjectDetailPage() {
               )}
             </motion.div>
           </div>
-        </motion.div>
+        </div>
       </section>
 
       {/* Project story */}
@@ -175,7 +159,30 @@ export default function ProjectDetailPage() {
         </div>
       </section>
 
-
+      {/* Project Gallery at the end */}
+      {project.images && project.images.length > 0 && (
+        <section className="pb-24 lg:pb-32 container-studio">
+          <div className="space-y-8 lg:space-y-12">
+            {project.images.map((img, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={viewportConfig}
+                transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
+                className="overflow-hidden aspect-[16/9] w-full bg-charcoal-900/50"
+              >
+                <img
+                  src={img}
+                  alt={`${project.title} - ${idx + 1}`}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </section>
+      )}
 
     </article>
   );
