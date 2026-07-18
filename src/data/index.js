@@ -71,7 +71,7 @@ The living spaces flow seamlessly into each other, separated by subtle material 
 We achieved this through floor-to-ceiling glazing, a restrained material palette that lets the skyline breathe, and carefully curated art that punctuates rather than dominates.`,
     concept: 'Sky as canvas. The design borrows the city\'s palette — the warm glow of evening light, the cool shimmer of the bay — and brings it inside through material choice and lighting design.',
     heroImage: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkyb8d3SUE3jpyXbwYRUkHcKcf56WdWgdvsNdbcSop9IJPxv6VWz5caNiDFA3CdjwXr0mZXDVMGNFiU595uCrY2IvFouLgLHFeOe2-kHPxNb27mezRNsrz91kJAJ6C9t27l_eLT=s1600',
-    thumbnail: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkyb8d3SUE3jpyXbwYRUkHcKcf56WdWgdvsNdbcSop9IJPxv6VWz5caNiDFA3CdjwXr0mZXDVMGNFiU595uCrY2IvFouLgLHFeOe2-kHPxNb27mezRNsrz91kJAJ6C9t27l_eLT=s1600',
+    thumbnail: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnhdvjF_uOha6tNzR3oQSbVnXKfykiME8BkJvrzeMPoU6BLk-EmJVyKMXqKR9NnuH8l_2XEuHVQcSaIhd4jWZFrGN_JYo7ro7SiP-2UkHbYQUu0633J_NX0xDYggb1HdLiEtThgWzV0N5Om=s812-k-no',
     images: [
       'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkyb8d3SUE3jpyXbwYRUkHcKcf56WdWgdvsNdbcSop9IJPxv6VWz5caNiDFA3CdjwXr0mZXDVMGNFiU595uCrY2IvFouLgLHFeOe2-kHPxNb27mezRNsrz91kJAJ6C9t27l_eLT=s1600',
       'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkIyOiok527_kVLZcRbpyCKFYc2F9yz18ZVAbeLE5MLu-9NmxUFMEvugf2qDu1jogyWje8TnISTXE4hXVFEbTilBjemPoyaUrmosqMcY0biCC957OD-BV5nEA7a6QILYO-PfdGysRd5V2g2=s1600',
@@ -217,7 +217,7 @@ export const HERO_SLIDES = [
     category: 'Residential Interior',
     location: 'Vattakarai, Nagercoil',
     description: 'A tranquil family home where clean lines meet warm textures.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlTjwjQG0s7-yYVSyg1kkYwAccZCrgoiub85iHn3mMojEZeCn-vz1n19l5IeUM7dV9ZSD5xH96mvz3KT-5KKu8yBAAebeykdO_pb-h3sObs-C2Omaw0lScv3n4eFd5hwtVkb_IbJRZMjQye=s1600',
+    image: 'https://cdn.pixabay.com/photo/2017/08/27/10/16/interior-2685521_1280.jpg',
     accent: '#c4a880',
   },
   {
@@ -227,7 +227,7 @@ export const HERO_SLIDES = [
     category: 'Luxury Living',
     location: 'Kanyakumari',
     description: 'Sky-high sophistication with panoramic city views.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkyb8d3SUE3jpyXbwYRUkHcKcf56WdWgdvsNdbcSop9IJPxv6VWz5caNiDFA3CdjwXr0mZXDVMGNFiU595uCrY2IvFouLgLHFeOe2-kHPxNb27mezRNsrz91kJAJ6C9t27l_eLT=s1600',
+    image: 'https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839183_1280.jpg',
     accent: '#a0b0c0',
   },
   {
@@ -237,7 +237,7 @@ export const HERO_SLIDES = [
     category: 'Commercial Design',
     location: 'Nagercoil Town',
     description: 'A creative sanctuary that inspires artful spatial poetry.',
-    image: 'https://lh3.googleusercontent.com/p/CIABIhBObQEGW_DefqocyrOoTDWa=s1600',
+    image: 'https://cdn.pixabay.com/photo/2017/02/24/12/23/kitchen-2094722_1280.jpg',
     accent: '#c0a890',
   },
   {
@@ -247,7 +247,7 @@ export const HERO_SLIDES = [
     category: 'Weekend Retreat',
     location: 'Marthandam',
     description: 'Stone, water, and wood in perfect harmony with nature.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnTEZS3Dt-AJJ-rjsmCdxut1RZjlN-j5G0jr7necGNrcdUfQkk-lpeXT0XtmnwqzY4oXSs7tYOFYFDqjv0HYUz4MkyZZd7BZAUh0r6wGgm6kmjsiFvoW7MqXd7M1I7ijXorP5c=s1600',
+    image: 'https://cdn.pixabay.com/photo/2020/08/25/18/28/workplace-5517744_1280.jpg',
     accent: '#90a890',
   },
   {
@@ -287,7 +287,7 @@ export const SERVICES = [
     shortTitle: 'Commercial',
     category: 'Work Environments',
     description: 'Spaces that work harder. We design commercial environments that improve productivity, communicate brand identity, and make lasting impressions on every visitor.',
-    image: 'https://lh3.googleusercontent.com/p/CIABIhBObQEGW_DefqocyrOoTDWa=s1600',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnhBg7WxmVrfucQ66X1CoVWoyeI2vWs5lhW0xYiTLacg2n6dixN-FaJXclbotcSID8BAtfHQRWFUwdjx9UFg2xzTY_TWTin_O9USHQT7XEnC4fESK7Rnp6GGNYrUCAR2J-Fcu2q=s646-k-no',
     icon: 'Building2',
     includes: [
       'Office & workspace design',
@@ -305,7 +305,7 @@ export const SERVICES = [
     shortTitle: 'Space Planning',
     category: 'Spatial Strategy',
     description: 'Good design begins with good planning. We optimize how space is used — improving flow, function, and experience before a single piece of furniture is chosen.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkyb8d3SUE3jpyXbwYRUkHcKcf56WdWgdvsNdbcSop9IJPxv6VWz5caNiDFA3CdjwXr0mZXDVMGNFiU595uCrY2IvFouLgLHFeOe2-kHPxNb27mezRNsrz91kJAJ6C9t27l_eLT=s1600',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnZvMg39Zgrx4jgF5oXg4ZF1G-pIwLutncSblHhjiyFKcdx8oUL1zwDq9IKaZqsvivgM6d8Yo3ovKYLAjSCq4g_-Obd6CCy26ZYPpGQXOn9ZS_vB0oiVxCiFqsDWc2zuALrNqF9=s677-k-no',
     icon: 'LayoutGrid',
     includes: [
       'Floor plan optimization',
@@ -341,7 +341,7 @@ export const SERVICES = [
     shortTitle: '3D Visualization',
     category: 'Design Preview',
     description: 'See your future home before a single wall is painted. Our photorealistic 3D renders give you complete confidence in every design decision.',
-    image: 'https://lh3.googleusercontent.com/p/CIABIhDt7TqF-exxxbLdDli17iT6=s1600',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnVwud5HSxGr6W8X50QZXBUn18N_1BkOvN-8qqlvAZEgyjYLHIWLUtwvi9gZgAGW52OhJC7ZsCnUuOvYwGyzJYgU1pHtTaxQd6VdwkJm8yIn1LT57r6BGy4T0ix18zVSMKBhwM=s728-k-no',
     icon: 'Layers',
     includes: [
       'Photorealistic 3D renders',
@@ -359,7 +359,7 @@ export const SERVICES = [
     shortTitle: 'Turnkey',
     category: 'Complete Solutions',
     description: 'From first sketch to final walk-through, we manage everything. One point of contact, zero stress, complete transformation.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkIyOiok527_kVLZcRbpyCKFYc2F9yz18ZVAbeLE5MLu-9NmxUFMEvugf2qDu1jogyWje8TnISTXE4hXVFEbTilBjemPoyaUrmosqMcY0biCC957OD-BV5nEA7a6QILYO-PfdGysRd5V2g2=s1600',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnVlEMY077OdGaHr2c0FC-BuVv9QxJI9ENzc1n_Rjwd9gem-OZBJYyrhIQtLh38Hj7epYjnxxKerl1p0JssapAez-OLhQZAJe5LHvnJtZ9NJZfNQ4gBaO8DhAVbiJM2GiFc-26t7b0wusk=s677-k-no',
     icon: 'Key',
     includes: [
       'Complete design & planning',
@@ -455,6 +455,6 @@ export const TEAM = [
 
 export const PROJECT_CATEGORIES = ['All', 'Residential', 'Commercial', 'Luxury', 'Renovation'];
 
-export const CTA_IMAGE = 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlTjwjQG0s7-yYVSyg1kkYwAccZCrgoiub85iHn3mMojEZeCn-vz1n19l5IeUM7dV9ZSD5xH96mvz3KT-5KKu8yBAAebeykdO_pb-h3sObs-C2Omaw0lScv3n4eFd5hwtVkb_IbJRZMjQye=s1600';
-export const ABOUT_IMAGE = 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkyb8d3SUE3jpyXbwYRUkHcKcf56WdWgdvsNdbcSop9IJPxv6VWz5caNiDFA3CdjwXr0mZXDVMGNFiU595uCrY2IvFouLgLHFeOe2-kHPxNb27mezRNsrz91kJAJ6C9t27l_eLT=s1600';
+export const CTA_IMAGE = 'https://i.pinimg.com/736x/4a/fe/ae/4afeaeed917ddd4dbd280c3cdd0373ce.jpg';
+export const ABOUT_IMAGE = 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmlBbVxPxKihet9ys2-8d5ABS4RpQf1WO952kYoF5xRtcQxDAYmRqyzSbZ_Jb9UXZurb2PBbqBMWoSDBbxCT4wbB1zMlXmSRBiTimNLz6mP0Yj5UXof37KePa5d1mxDykVKguat=s677-k-no';
 export const CONTACT_IMAGE = 'https://lh3.googleusercontent.com/p/CIABIhBObQEGW_DefqocyrOoTDWa=s1600';

@@ -37,13 +37,7 @@ export default function ProjectDetailPage() {
     );
   }
 
-  const rooms = [
-    { label: 'Living Room', image: project.rooms.living },
-    { label: 'Kitchen', image: project.rooms.kitchen },
-    { label: 'Bedroom', image: project.rooms.bedroom },
-    { label: 'Dining', image: project.rooms.dining },
-    { label: 'Details', image: project.rooms.details },
-  ];
+
 
   return (
     <article className="bg-charcoal-800">
@@ -182,63 +176,6 @@ export default function ProjectDetailPage() {
         </div>
       </section>
 
-      {/* Gallery - Room sections */}
-      <section className="py-4 container-studio">
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportConfig}
-          className="text-label text-bronze mb-12"
-        >
-          Room by Room
-        </motion.p>
-
-        <div className="space-y-4">
-          {/* First row: 2 images */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {rooms.slice(0, 2).map((room, i) => (
-              <RoomImage key={room.label} room={room} index={i} />
-            ))}
-          </div>
-
-          {/* Second: full width */}
-          <RoomImage room={rooms[2]} index={2} wide />
-
-          {/* Third row: 2 images */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {rooms.slice(3).map((room, i) => (
-              <RoomImage key={room.label} room={room} index={i + 3} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Additional images */}
-      {project.images.length > 1 && (
-        <section className="py-12 lg:py-20 container-studio">
-          <p className="text-label text-bronze mb-12">Full Gallery</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {project.images.map((img, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: i * 0.06 }}
-                viewport={{ once: true, amount: 0.1 }}
-                className="overflow-hidden aspect-[4/3]"
-              >
-                <img
-                  src={img}
-                  alt={`${project.title} — ${i + 1}`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
-                />
-              </motion.div>
-            ))}
-          </div>
-        </section>
-      )}
 
       {/* Next project */}
       <section className="py-20 lg:py-32 border-t border-ivory-200/10">
@@ -280,27 +217,3 @@ export default function ProjectDetailPage() {
   );
 }
 
-function RoomImage({ room, index, wide }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: index * 0.05 }}
-      viewport={{ once: true, amount: 0.1 }}
-      className={`group relative overflow-hidden ${wide ? 'aspect-[16/7]' : 'aspect-[4/3]'}`}
-    >
-      <img
-        src={room.image}
-        alt={room.label}
-        className="w-full h-full object-cover transition-transform duration-1000 ease-expo-out group-hover:scale-105"
-        loading="lazy"
-      />
-      <div className="absolute inset-0 bg-charcoal-900/0 group-hover:bg-charcoal-900/20 transition-colors duration-500" />
-      <div className="absolute bottom-4 left-4">
-        <span className="text-xs uppercase tracking-widest font-sans text-ivory-200/60 bg-charcoal-900/60 backdrop-blur-sm px-3 py-1.5">
-          {room.label}
-        </span>
-      </div>
-    </motion.div>
-  );
-}
