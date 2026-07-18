@@ -162,9 +162,6 @@ export default function Navbar() {
                       >
                         {link.label}
                       </span>
-                      <span className="text-xs uppercase tracking-widest text-taupe opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        View
-                      </span>
                     </Link>
                   </motion.div>
                 ))}
