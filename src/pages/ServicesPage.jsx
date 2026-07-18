@@ -48,7 +48,7 @@ export default function ServicesPage() {
       </div>
 
       {/* CTA */}
-      <section className="py-14 bg-charcoal-900">
+      <section className="py-24 lg:py-32 bg-charcoal-900">
         <div className="container-studio text-center">
           <motion.h2
             variants={fadeUp}

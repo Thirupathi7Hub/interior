@@ -270,7 +270,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-12 bg-charcoal-900 text-center">
+      <section className="py-24 lg:py-32 bg-charcoal-900 text-center">
         <div className="container-studio">
           <motion.h2
             variants={fadeUp}
