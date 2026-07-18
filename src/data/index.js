@@ -99,6 +99,7 @@ We achieved this through floor-to-ceiling glazing, a restrained material palette
     story: `This workspace for a celebrated fashion house needed to be as creative as the work produced within it. We conceived a space that bridges the structured world of high fashion with the fluid nature of artistic exploration.
 
 Raw concrete meets polished brass. Rough stone floors contrast with soft velvet drapery. Every material is in conversation with another.`,
+    concept: 'The tension between structure and flow, rigour and creativity — translated into spatial terms.',
     heroImage: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnl6d6h2KddUK4FqQz4XNutAkjF0ulORoTTZXkx3Bwt49x8Zu1ZB92RhKvtqh4e60CMl4Ek4fuX_oYxo_aQJzR1ZWx7KM53GSQA7YpO_pcpdJHKJDHjm2D6tybzRXD-MoCeA4Q=s1031-k-no',
     thumbnail: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnl6d6h2KddUK4FqQz4XNutAkjF0ulORoTTZXkx3Bwt49x8Zu1ZB92RhKvtqh4e60CMl4Ek4fuX_oYxo_aQJzR1ZWx7KM53GSQA7YpO_pcpdJHKJDHjm2D6tybzRXD-MoCeA4Q=s1031-k-no',
     images: [
@@ -455,5 +456,5 @@ export const TEAM = [
 export const PROJECT_CATEGORIES = ['All', 'Residential', 'Commercial', 'Luxury', 'Renovation'];
 
 export const CTA_IMAGE = 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlTjwjQG0s7-yYVSyg1kkYwAccZCrgoiub85iHn3mMojEZeCn-vz1n19l5IeUM7dV9ZSD5xH96mvz3KT-5KKu8yBAAebeykdO_pb-h3sObs-C2Omaw0lScv3n4eFd5hwtVkb_IbJRZMjQye=s1600';
-export const ABOUT_IMAGE = 'https://images.unsplash.com/photo-1672345158827-7f4aa9467b49?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+export const ABOUT_IMAGE = 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkyb8d3SUE3jpyXbwYRUkHcKcf56WdWgdvsNdbcSop9IJPxv6VWz5caNiDFA3CdjwXr0mZXDVMGNFiU595uCrY2IvFouLgLHFeOe2-kHPxNb27mezRNsrz91kJAJ6C9t27l_eLT=s1600';
 export const CONTACT_IMAGE = 'https://lh3.googleusercontent.com/p/CIABIhBObQEGW_DefqocyrOoTDWa=s1600';
