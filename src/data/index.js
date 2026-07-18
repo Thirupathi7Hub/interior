@@ -99,9 +99,8 @@ We achieved this through floor-to-ceiling glazing, a restrained material palette
     story: `This workspace for a celebrated fashion house needed to be as creative as the work produced within it. We conceived a space that bridges the structured world of high fashion with the fluid nature of artistic exploration.
 
 Raw concrete meets polished brass. Rough stone floors contrast with soft velvet drapery. Every material is in conversation with another.`,
-    concept: 'The tension between structure and flow, rigour and creativity — translated into spatial terms.',
-    heroImage: 'https://lh3.googleusercontent.com/p/CIABIhBObQEGW_DefqocyrOoTDWa=s1600',
-    thumbnail: 'https://lh3.googleusercontent.com/p/CIABIhBObQEGW_DefqocyrOoTDWa=s1600',
+    heroImage: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnl6d6h2KddUK4FqQz4XNutAkjF0ulORoTTZXkx3Bwt49x8Zu1ZB92RhKvtqh4e60CMl4Ek4fuX_oYxo_aQJzR1ZWx7KM53GSQA7YpO_pcpdJHKJDHjm2D6tybzRXD-MoCeA4Q=s1031-k-no',
+    thumbnail: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnl6d6h2KddUK4FqQz4XNutAkjF0ulORoTTZXkx3Bwt49x8Zu1ZB92RhKvtqh4e60CMl4Ek4fuX_oYxo_aQJzR1ZWx7KM53GSQA7YpO_pcpdJHKJDHjm2D6tybzRXD-MoCeA4Q=s1031-k-no',
     images: [
       'https://lh3.googleusercontent.com/p/CIABIhBObQEGW_DefqocyrOoTDWa=s1600',
     ],
@@ -253,11 +252,11 @@ export const HERO_SLIDES = [
   {
     id: 5,
     projectId: 'noir-restaurant',
-    title: 'Noir Restaurant',
+    title: 'Twin  Scissor',
     category: 'Hospitality Design',
     location: 'Nagercoil',
     description: 'Where drama and intimacy coexist in theatrical luxury.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkIyOiok527_kVLZcRbpyCKFYc2F9yz18ZVAbeLE5MLu-9NmxUFMEvugf2qDu1jogyWje8TnISTXE4hXVFEbTilBjemPoyaUrmosqMcY0biCC957OD-BV5nEA7a6QILYO-PfdGysRd5V2g2=s1600',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlCFXD72Dci7Atd2bveXU-l4l0VqG2eIqfL-VBaKIGx78BNWE16tSFSZ-qEOclwgEVpK_QjXSUK0ZGkBmlpUchWEv5NNzRk02_awKKqgDwqR4FbfOv1BIIDHxST1157LviGFN5tqg=s3072-v1',
     accent: '#c0a0a0',
   },
 ];
@@ -323,7 +322,7 @@ export const SERVICES = [
     shortTitle: 'Kitchen Design',
     category: 'Culinary Spaces',
     description: 'The kitchen is the heart of the home. We design kitchens that are as beautiful as they are functional — spaces where cooking becomes a pleasure.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnTEZS3Dt-AJJ-rjsmCdxut1RZjlN-j5G0jr7necGNrcdUfQkk-lpeXT0XtmnwqzY4oXSs7tYOFYFDqjv0HYUz4MkyZZd7BZAUh0r6wGgm6kmjsiFvoW7MqXd7M1I7ijXorP5c=s1600',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnFQdENNz4rTkgbt1mS97RA2rO4YCnbqAt1jUptSwFSOK7ZjqD4wG5iJYcbX9UTsJvIGQzN5DyQRLEw2SdPCM6LC9zAbdrKz2qpwYsvtIVk85PQl-bQ_I8GLdfbigY6Kfmb3Wh3iiVFxXY=s677-k-no',
     icon: 'ChefHat',
     includes: [
       'Custom modular design',
@@ -456,5 +455,5 @@ export const TEAM = [
 export const PROJECT_CATEGORIES = ['All', 'Residential', 'Commercial', 'Luxury', 'Renovation'];
 
 export const CTA_IMAGE = 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlTjwjQG0s7-yYVSyg1kkYwAccZCrgoiub85iHn3mMojEZeCn-vz1n19l5IeUM7dV9ZSD5xH96mvz3KT-5KKu8yBAAebeykdO_pb-h3sObs-C2Omaw0lScv3n4eFd5hwtVkb_IbJRZMjQye=s1600';
-export const ABOUT_IMAGE = 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkyb8d3SUE3jpyXbwYRUkHcKcf56WdWgdvsNdbcSop9IJPxv6VWz5caNiDFA3CdjwXr0mZXDVMGNFiU595uCrY2IvFouLgLHFeOe2-kHPxNb27mezRNsrz91kJAJ6C9t27l_eLT=s1600';
+export const ABOUT_IMAGE = 'https://images.unsplash.com/photo-1672345158827-7f4aa9467b49?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 export const CONTACT_IMAGE = 'https://lh3.googleusercontent.com/p/CIABIhBObQEGW_DefqocyrOoTDWa=s1600';
