@@ -115,7 +115,7 @@ export default function ProjectDetailPage() {
       </section>
 
       {/* Project story */}
-      <section className="py-20 lg:py-28 container-studio">
+      <section className="py-12 lg:py-16 container-studio">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           <div className="lg:col-span-7">
             <motion.p

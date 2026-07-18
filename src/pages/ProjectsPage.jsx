@@ -18,7 +18,7 @@ export default function ProjectsPage() {
   return (
     <div className="pt-24 min-h-screen bg-charcoal-800">
       {/* Page header */}
-      <section className="py-20 lg:py-28 container-studio">
+      <section className="py-12 lg:py-16 container-studio">
         <motion.p
           variants={fadeUp}
           initial="hidden"
@@ -95,7 +95,7 @@ export default function ProjectsPage() {
         </AnimatePresence>
 
         {filtered.length === 0 && (
-          <div className="text-center py-24">
+          <div className="text-center py-14">
             <p className="text-taupe text-body">No projects found in this category.</p>
           </div>
         )}

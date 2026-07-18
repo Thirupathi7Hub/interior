@@ -90,7 +90,7 @@
   }
 
   .section-padding {
-    @apply py-14 lg:py-20;
+    @apply py-12 lg:py-16;
   }
 
   .grain-overlay {

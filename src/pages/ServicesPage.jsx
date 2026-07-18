@@ -11,7 +11,7 @@ export default function ServicesPage() {
   return (
     <div className="pt-24 bg-charcoal-800">
       {/* Header */}
-      <section className="py-20 lg:py-28 container-studio">
+      <section className="py-12 lg:py-16 container-studio">
         <motion.p
           variants={fadeUp}
           initial="hidden"
@@ -48,7 +48,7 @@ export default function ServicesPage() {
       </div>
 
       {/* CTA */}
-      <section className="py-24 bg-charcoal-900">
+      <section className="py-14 bg-charcoal-900">
         <div className="container-studio text-center">
           <motion.h2
             variants={fadeUp}
@@ -95,7 +95,7 @@ function ServiceBlock({ service, index }) {
   return (
     <section
       id={`service-${service.id}`}
-      className={`py-20 lg:py-28 border-b border-ivory-200/8 ${
+      className={`py-12 lg:py-16 border-b border-ivory-200/8 ${
         index % 2 === 1 ? 'bg-charcoal-900' : ''
       }`}
     >

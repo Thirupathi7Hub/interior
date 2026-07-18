@@ -51,7 +51,7 @@ export default function ContactPage() {
   return (
     <div className="pt-24 bg-charcoal-800">
       {/* Header */}
-      <section className="py-10 lg:py-14 container-studio">
+      <section className="py-12 lg:py-16 container-studio">
         <motion.p
           variants={fadeUp}
           initial="hidden"
@@ -81,7 +81,7 @@ export default function ContactPage() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-center py-20"
+                className="text-center py-12"
               >
                 <CheckCircle size={40} className="text-bronze mx-auto mb-6" />
                 <h3 className="font-display text-3xl text-ivory-200 mb-4">Thank you</h3>
