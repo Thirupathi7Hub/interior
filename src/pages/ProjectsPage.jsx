@@ -18,7 +18,7 @@ export default function ProjectsPage() {
   return (
     <div className="pt-24 min-h-screen bg-charcoal-800">
       {/* Page header */}
-      <section className="py-12 lg:py-16 container-studio">
+      <section className="py-20 lg:py-28 container-studio">
         <motion.p
           variants={fadeUp}
           initial="hidden"

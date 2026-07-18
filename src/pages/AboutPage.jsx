@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <div className="pt-24 bg-charcoal-800">
       {/* Hero header */}
-      <section className="py-12 lg:py-16">
+      <section className="py-20 lg:py-28">
         <div className="container-studio">
           <motion.p
             variants={fadeUp}
