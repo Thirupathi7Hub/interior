@@ -11,8 +11,7 @@ export default function ProjectDetailPage() {
   const heroRef = useRef(null);
 
   const project = PROJECTS.find((p) => p.id === id);
-  const currentIndex = PROJECTS.findIndex((p) => p.id === id);
-  const nextProject = PROJECTS[(currentIndex + 1) % PROJECTS.length];
+
 
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -177,42 +176,7 @@ export default function ProjectDetailPage() {
       </section>
 
 
-      {/* Next project */}
-      <section className="py-20 lg:py-32 border-t border-ivory-200/10">
-        <Link
-          to={`/projects/${nextProject.id}`}
-          className="group block container-studio"
-        >
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="flex flex-col sm:flex-row sm:items-end justify-between gap-6"
-          >
-            <div>
-              <p className="text-label text-taupe/50 mb-3">Next Project</p>
-              <h3 className="font-display text-4xl sm:text-5xl lg:text-6xl font-light text-ivory-200/50 group-hover:text-ivory-200 transition-colors duration-500 leading-[0.9]">
-                {nextProject.title}
-              </h3>
-            </div>
-            <div className="flex items-center gap-3 text-taupe group-hover:text-bronze transition-colors duration-300 flex-shrink-0">
-              <span className="text-xs uppercase tracking-widest font-sans">View Project</span>
-              <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-            </div>
-          </motion.div>
 
-          {/* Preview image on hover */}
-          <div className="mt-8 overflow-hidden aspect-[16/5] opacity-30 group-hover:opacity-60 transition-opacity duration-500">
-            <img
-              src={nextProject.thumbnail}
-              alt={nextProject.title}
-              className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-700"
-              loading="lazy"
-            />
-          </div>
-        </Link>
-      </section>
     </article>
   );
 }
