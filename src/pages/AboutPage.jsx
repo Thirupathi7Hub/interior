@@ -28,7 +28,7 @@ export default function AboutPage() {
             animate="visible"
             className="font-display text-5xl sm:text-6xl lg:text-8xl font-light text-ivory-200 leading-[0.9] mb-12"
           >
-            About Luminae
+            About Dream Paradise
           </motion.h1>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
@@ -39,10 +39,10 @@ export default function AboutPage() {
               animate="visible"
             >
               <p className="text-body text-lg leading-loose mb-6">
-                Luminae was born in 2014 from a simple conviction: that thoughtful, beautiful design should not be a privilege. It should be accessible to anyone with the vision to pursue it.
+                Dream Paradise was born in 2020 from a simple conviction: that thoughtful, beautiful design should not be a privilege. It should be accessible to anyone with the vision to pursue it.
               </p>
               <p className="text-body leading-loose">
-                Founded by Arjun Nair, our studio has grown from a two-person practice into a team of eight dedicated designers, project managers, and craftspeople — all united by a passion for spaces that move people.
+                Founded by Prakash, our studio has grown from a local practice into a dedicated team of designers, project managers, and craftspeople — all united by a passion for spaces that move people.
               </p>
             </motion.div>
 
@@ -74,7 +74,7 @@ export default function AboutPage() {
         >
           <img
             src={ABOUT_IMAGE}
-            alt="Luminae Interior Studio workspace"
+            alt="Dream Paradise Interiors workspace"
             className="w-full h-full object-cover"
             loading="lazy"
           />

@@ -218,7 +218,7 @@ export default function ContactPage() {
             >
               <img
                 src={CONTACT_IMAGE}
-                alt="Luminae studio"
+                alt="Dream Paradise Interiors studio"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

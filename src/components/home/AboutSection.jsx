@@ -61,7 +61,7 @@ export default function AboutSection() {
               viewport={viewportConfig}
               className="text-body mb-6 max-w-lg"
             >
-              Founded in 2014, Luminae Interior Studio was born from a belief that exceptional design belongs in every home — not just the privileged few. Over a decade, we've grown from a small Mumbai practice into one of the city's most respected design studios.
+              Founded in 2020, Dream Paradise Interiors was born from a belief that exceptional design belongs in every space. We have grown into one of Nagercoil's most trusted design teams, known for smart planning, beautiful execution, and client satisfaction.
             </motion.p>
 
             <motion.p
