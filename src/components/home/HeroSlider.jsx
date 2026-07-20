@@ -159,9 +159,11 @@ export default function HeroSlider() {
                 </div>
 
                 {/* Title */}
-                <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-ivory-200 leading-[0.9] mb-6">
-                  {currentSlide.title}
-                </h1>
+                <div className="min-h-[2.4em] sm:min-h-[1.2em] flex items-end mb-6">
+                  <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-ivory-200 leading-[0.9]">
+                    {currentSlide.title}
+                  </h1>
+                </div>
 
                 {/* Location */}
                 <div className="flex flex-col sm:flex-row sm:items-end gap-4 sm:gap-8 mb-10">

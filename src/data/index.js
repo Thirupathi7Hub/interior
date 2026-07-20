@@ -237,7 +237,7 @@ export const HERO_SLIDES = [
     category: 'Commercial Design',
     location: 'Nagercoil Town',
     description: 'A creative sanctuary that inspires artful spatial poetry.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnl6d6h2KddUK4FqQz4XNutAkjF0ulORoTTZXkx3Bwt49x8Zu1ZB92RhKvtqh4e60CMl4Ek4fuX_oYxo_aQJzR1ZWx7KM53GSQA7YpO_pcpdJHKJDHjm2D6tybzRXD-MoCeA4Q=s1031-k-no',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmLOgQem78rS_819dqQ-V0bAgr1nLOoxpFPXMwK_C7j54YuQylun6oDvwJvU5QQcLchopi3vIksOaIysL1rZ6hZIZ_IuLnvVEjlia3XcniY7ZyIhibjX0r-waCTzTQSvv9TyrwxjQ=s1600',
     accent: '#c0a890',
   },
   {
@@ -247,7 +247,7 @@ export const HERO_SLIDES = [
     category: 'Heritage Renovation',
     location: 'Pattakasalianvilai, Nagercoil',
     description: 'Vintage soul with contemporary sensibility.',
-    image: 'https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1920&q=85',
+    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkIyOiok527_kVLZcRbpyCKFYc2F9yz18ZVAbeLE5MLu-9NmxUFMEvugf2qDu1jogyWje8TnISTXE4hXVFEbTilBjemPoyaUrmosqMcY0biCC957OD-BV5nEA7a6QILYO-PfdGysRd5V2g2=s1600',
     accent: '#90a890',
   },
   {
@@ -257,7 +257,7 @@ export const HERO_SLIDES = [
     category: 'Weekend Retreat',
     location: 'Marthandam',
     description: 'Stone, water, and wood in perfect harmony with nature.',
-    image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1920&q=85',
+    image: 'https://lh3.googleusercontent.com/p/CIHM0ogKEICAgID7lNXRoQE=s1600',
     accent: '#c0a0a0',
   },
 ];
