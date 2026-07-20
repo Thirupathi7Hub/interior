@@ -230,36 +230,6 @@ export const HERO_SLIDES = [
     image: 'https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839183_1280.jpg',
     accent: '#a0b0c0',
   },
-  {
-    id: 3,
-    projectId: 'the-atelier',
-    title: 'The Atelier',
-    category: 'Commercial Design',
-    location: 'Nagercoil Town',
-    description: 'A creative sanctuary that inspires artful spatial poetry.',
-    image: 'https://cdn.pixabay.com/photo/2017/08/27/10/16/interior-2685521_1280.jpg',
-    accent: '#c4a880',
-  },
-  {
-    id: 4,
-    projectId: 'zen-villa',
-    title: 'Zen Villa',
-    category: 'Weekend Retreat',
-    location: 'Marthandam',
-    description: 'Stone, water, and wood in perfect harmony with nature.',
-    image: 'https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839183_1280.jpg',
-    accent: '#a0b0c0',
-  },
-  {
-    id: 5,
-    projectId: 'noir-restaurant',
-    title: 'Twin Scissor',
-    category: 'Hospitality Design',
-    location: 'Nagercoil',
-    description: 'Where drama and intimacy coexist in theatrical luxury.',
-    image: 'https://cdn.pixabay.com/photo/2017/08/27/10/16/interior-2685521_1280.jpg',
-    accent: '#c4a880',
-  },
 ];
 
 export const SERVICES = [
