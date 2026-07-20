@@ -230,6 +230,36 @@ export const HERO_SLIDES = [
     image: 'https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839183_1280.jpg',
     accent: '#a0b0c0',
   },
+  {
+    id: 3,
+    projectId: 'serene-residence',
+    title: 'Serene Residence',
+    category: 'Residential Interior',
+    location: 'Vattakarai, Nagercoil',
+    description: 'A tranquil family home where clean lines meet warm textures.',
+    image: 'https://cdn.pixabay.com/photo/2017/08/27/10/16/interior-2685521_1280.jpg',
+    accent: '#c4a880',
+  },
+  {
+    id: 4,
+    projectId: 'azure-penthouse',
+    title: 'Azure Penthouse',
+    category: 'Luxury Living',
+    location: 'Kanyakumari',
+    description: 'Sky-high sophistication with panoramic city views.',
+    image: 'https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839183_1280.jpg',
+    accent: '#a0b0c0',
+  },
+  {
+    id: 5,
+    projectId: 'serene-residence',
+    title: 'Serene Residence',
+    category: 'Residential Interior',
+    location: 'Vattakarai, Nagercoil',
+    description: 'A tranquil family home where clean lines meet warm textures.',
+    image: 'https://cdn.pixabay.com/photo/2017/08/27/10/16/interior-2685521_1280.jpg',
+    accent: '#c4a880',
+  },
 ];
 
 export const SERVICES = [
