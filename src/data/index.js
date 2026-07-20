@@ -253,7 +253,7 @@ export const HERO_SLIDES = [
   {
     id: 5,
     projectId: 'noir-restaurant',
-    title: 'Twin Scissor',
+    title: 'Twin  Scissor',
     category: 'Hospitality Design',
     location: 'Nagercoil',
     description: 'Where drama and intimacy coexist in theatrical luxury.',
