@@ -137,78 +137,55 @@ export default function HeroSlider() {
       <div className="relative z-10 h-full flex flex-col">
         <div className="flex-1 flex items-end container-studio pb-24 lg:pb-32">
           <div className="w-full max-w-3xl">
-            {/* Slide counter */}
+            {/* Slide content */}
             <AnimatePresence mode="wait">
               <motion.div
-                key={`meta-${currentIndex}`}
+                key={`slide-content-${currentIndex}`}
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] } }}
-                exit={{ opacity: 0, y: -10, transition: { duration: 0.3 } }}
-                className="flex items-center gap-6 mb-6"
+                animate={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] } }}
+                exit={{ opacity: 0, y: -16, transition: { duration: 0.3, ease: [0.87, 0, 0.13, 1] } }}
               >
-                <div className="flex items-center gap-3">
-                  <span className="text-bronze font-sans text-sm font-light tracking-widest">
-                    {formatNumber(currentIndex)}
-                  </span>
-                  <div className="w-8 h-px bg-bronze/60" />
-                  <span className="text-ivory-200/40 font-sans text-sm">
-                    {formatNumber(totalSlides - 1)}
-                  </span>
+                {/* Counter */}
+                <div className="flex items-center gap-6 mb-6">
+                  <div className="flex items-center gap-3">
+                    <span className="text-bronze font-sans text-sm font-light tracking-widest">
+                      {formatNumber(currentIndex)}
+                    </span>
+                    <div className="w-8 h-px bg-bronze/60" />
+                    <span className="text-ivory-200/40 font-sans text-sm">
+                      {String(totalSlides).padStart(2, '0')}
+                    </span>
+                  </div>
                 </div>
-              </motion.div>
-            </AnimatePresence>
 
-            {/* Title */}
-            <div className="overflow-hidden">
-              <AnimatePresence mode="wait">
-                <motion.h1
-                  key={`title-${currentIndex}`}
-                  initial={{ y: '100%', opacity: 0 }}
-                  animate={{ y: 0, opacity: 1, transition: { duration: 1.0, delay: 0.2, ease: [0.16, 1, 0.3, 1] } }}
-                  exit={{ y: '-100%', opacity: 0, transition: { duration: 0.5, ease: [0.87, 0, 0.13, 1] } }}
-                  className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-ivory-200 leading-[0.9] mb-6"
-                >
+                {/* Title */}
+                <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-ivory-200 leading-[0.9] mb-6">
                   {currentSlide.title}
-                </motion.h1>
-              </AnimatePresence>
-            </div>
+                </h1>
 
-            {/* Location */}
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={`desc-${currentIndex}`}
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0, transition: { duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] } }}
-                exit={{ opacity: 0, y: -16, transition: { duration: 0.3 } }}
-                className="flex flex-col sm:flex-row sm:items-end gap-4 sm:gap-8 mb-10"
-              >
-                <div>
-                  <p className="text-label text-taupe/70 mb-1">Location</p>
-                  <p className="font-sans text-sm text-ivory-200/80">
-                    {currentSlide.location}
-                  </p>
+                {/* Location */}
+                <div className="flex flex-col sm:flex-row sm:items-end gap-4 sm:gap-8 mb-10">
+                  <div>
+                    <p className="text-label text-taupe/70 mb-1">Location</p>
+                    <p className="font-sans text-sm text-ivory-200/80">
+                      {currentSlide.location}
+                    </p>
+                  </div>
                 </div>
-              </motion.div>
-            </AnimatePresence>
 
-            {/* CTA */}
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={`cta-${currentIndex}`}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0, transition: { duration: 0.7, delay: 0.5, ease: [0.16, 1, 0.3, 1] } }}
-                exit={{ opacity: 0, transition: { duration: 0.2 } }}
-              >
-                <Link
-                  to={`/projects/${currentSlide.projectId}`}
-                  className="group inline-flex items-center gap-4 border border-ivory-200/30 px-8 py-4 text-ivory-200 text-xs uppercase tracking-widest font-sans transition-all duration-500 hover:bg-ivory-200 hover:text-charcoal-800 hover:border-ivory-200"
-                >
-                  View Project
-                  <ArrowRight
-                    size={14}
-                    className="transition-transform duration-300 group-hover:translate-x-1"
-                  />
-                </Link>
+                {/* CTA */}
+                <div>
+                  <Link
+                    to={`/projects/${currentSlide.projectId}`}
+                    className="group inline-flex items-center gap-4 border border-ivory-200/30 px-8 py-4 text-ivory-200 text-xs uppercase tracking-widest font-sans transition-all duration-500 hover:bg-ivory-200 hover:text-charcoal-800 hover:border-ivory-200"
+                  >
+                    View Project
+                    <ArrowRight
+                      size={14}
+                      className="transition-transform duration-300 group-hover:translate-x-1"
+                    />
+                  </Link>
+                </div>
               </motion.div>
             </AnimatePresence>
           </div>
