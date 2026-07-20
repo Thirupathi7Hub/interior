@@ -88,7 +88,6 @@ export default function ProjectsPage() {
                 key={project.id}
                 project={project}
                 index={i}
-                featured={i === 0 && activeFilter === 'All'}
               />
             ))}
           </motion.div>
@@ -104,7 +103,7 @@ export default function ProjectsPage() {
   );
 }
 
-function ProjectCard({ project, index, featured }) {
+function ProjectCard({ project, index }) {
   return (
     <motion.article
       initial={{ opacity: 0, y: 40 }}
@@ -117,59 +116,57 @@ function ProjectCard({ project, index, featured }) {
           delay: index * 0.08,
         },
       }}
-      className={`group ${featured ? 'md:col-span-2 lg:col-span-2' : ''}`}
+      className="group flex flex-col h-full"
     >
-      <Link to={`/projects/${project.id}`} className="block">
-        {/* Image */}
-        <div
-          className={`overflow-hidden relative ${
-            featured ? 'aspect-[16/9]' : 'aspect-[4/3]'
-          }`}
-        >
-          <img
-            src={project.thumbnail}
-            alt={project.title}
-            className="w-full h-full object-cover transition-transform duration-1000 ease-expo-out group-hover:scale-105"
-            loading="lazy"
-            decoding="async"
-          />
-          <div className="absolute inset-0 bg-charcoal-900/0 group-hover:bg-charcoal-900/25 transition-colors duration-500" />
-
-          {/* Hover overlay */}
-          <div className="absolute inset-0 flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-400 p-6">
-            <div className="flex items-center gap-3 text-ivory-200">
-              <span className="text-xs uppercase tracking-widest font-sans">View Project</span>
-              <div className="w-8 h-8 border border-ivory-200/50 flex items-center justify-center">
-                <ArrowUpRight size={12} />
-              </div>
-            </div>
-          </div>
-
-          {/* Category badge */}
-          <div className="absolute top-4 left-4">
-            <span className="text-[0.6rem] uppercase tracking-widest font-sans text-ivory-200/70 bg-charcoal-900/60 backdrop-blur-sm px-3 py-1.5">
-              {project.category}
-            </span>
-          </div>
-        </div>
-
-        {/* Info */}
-        <div className="pt-5 pb-2">
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <h3 className="font-sans font-light text-ivory-200 text-base group-hover:text-bronze transition-colors duration-300 mb-1">
-                {project.title}
-              </h3>
-              <div className="flex items-center gap-3 text-xs text-taupe/60 font-sans">
-                <span>{project.location}</span>
-                <span>·</span>
-                <span>{project.year}</span>
-              </div>
-            </div>
-            <ArrowUpRight
-              size={16}
-              className="text-taupe/30 group-hover:text-bronze transition-all duration-300 flex-shrink-0 mt-0.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+      <Link to={`/projects/${project.id}`} className="block flex-1 flex flex-col justify-between">
+        <div>
+          {/* Image */}
+          <div className="overflow-hidden relative aspect-[4/3] bg-charcoal-900/40">
+            <img
+              src={project.thumbnail}
+              alt={project.title}
+              className="w-full h-full object-cover transition-transform duration-1000 ease-expo-out group-hover:scale-105"
+              loading="lazy"
+              decoding="async"
             />
+            <div className="absolute inset-0 bg-charcoal-900/0 group-hover:bg-charcoal-900/25 transition-colors duration-500" />
+
+            {/* Hover overlay */}
+            <div className="absolute inset-0 flex items-end opacity-0 group-hover:opacity-100 transition-opacity duration-400 p-6">
+              <div className="flex items-center gap-3 text-ivory-200">
+                <span className="text-xs uppercase tracking-widest font-sans">View Project</span>
+                <div className="w-8 h-8 border border-ivory-200/50 flex items-center justify-center">
+                  <ArrowUpRight size={12} />
+                </div>
+              </div>
+            </div>
+
+            {/* Category badge */}
+            <div className="absolute top-4 left-4">
+              <span className="text-[0.6rem] uppercase tracking-widest font-sans text-ivory-200/70 bg-charcoal-900/60 backdrop-blur-sm px-3 py-1.5">
+                {project.category}
+              </span>
+            </div>
+          </div>
+
+          {/* Info */}
+          <div className="pt-5 pb-2">
+            <div className="flex items-start justify-between gap-4">
+              <div className="flex-1 min-w-0">
+                <h3 className="font-sans font-light text-ivory-200 text-base group-hover:text-bronze transition-colors duration-300 mb-1.5 truncate">
+                  {project.title}
+                </h3>
+                <div className="flex items-center gap-3 text-xs text-taupe/60 font-sans">
+                  <span>{project.location}</span>
+                  <span>·</span>
+                  <span>{project.year}</span>
+                </div>
+              </div>
+              <ArrowUpRight
+                size={16}
+                className="text-taupe/30 group-hover:text-bronze transition-all duration-300 flex-shrink-0 mt-0.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              />
+            </div>
           </div>
         </div>
       </Link>
