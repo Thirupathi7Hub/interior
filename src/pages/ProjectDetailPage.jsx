@@ -166,16 +166,16 @@ export default function ProjectDetailPage() {
             {project.images.map((img, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 50, scale: 0.97 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={viewportConfig}
                 transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
-                className="overflow-hidden aspect-[16/9] w-full bg-charcoal-900/50"
+                className="overflow-hidden aspect-[16/9] w-full bg-charcoal-900/50 group border border-ivory-200/5"
               >
                 <img
                   src={img}
                   alt={`${project.title} - ${idx + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
                   loading="lazy"
                 />
               </motion.div>
