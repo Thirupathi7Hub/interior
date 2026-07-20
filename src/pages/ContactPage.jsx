@@ -34,16 +34,40 @@ export default function ContactPage() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [whatsappUrl, setWhatsappUrl] = useState('');
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate submission
-    await new Promise((r) => setTimeout(r, 1500));
+
+    const phoneNumber = STUDIO_INFO.whatsapp.replace(/[^0-9]/g, '');
+
+    const lines = [
+      `*New Inquiry - Dream Paradise Interiors*`,
+      ``,
+      `👤 *Name:* ${formData.name || 'Not specified'}`,
+      `📧 *Email:* ${formData.email || 'Not specified'}`,
+      `📞 *Phone:* ${formData.phone || 'Not specified'}`,
+      `🏠 *Project Type:* ${formData.projectType || 'Not specified'}`,
+      `💰 *Budget Range:* ${formData.budget || 'Not specified'}`,
+    ];
+
+    if (formData.message) {
+      lines.push(`💬 *Vision/Message:* ${formData.message}`);
+    }
+
+    const messageText = lines.join('\n');
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(messageText)}`;
+
+    setWhatsappUrl(url);
+
+    // Open WhatsApp in a new window
+    window.open(url, '_blank');
+
     setLoading(false);
     setSubmitted(true);
   };
@@ -84,10 +108,19 @@ export default function ContactPage() {
                 className="text-center py-12"
               >
                 <CheckCircle size={40} className="text-bronze mx-auto mb-6" />
-                <h3 className="font-display text-3xl text-ivory-200 mb-4">Thank you</h3>
-                <p className="text-body max-w-sm mx-auto">
-                  We've received your message and will be in touch within 24 hours to schedule your consultation.
+                <h3 className="font-display text-3xl text-ivory-200 mb-4">Inquiry Form Prepared!</h3>
+                <p className="text-body max-w-md mx-auto mb-8">
+                  Your project details have been formatted for WhatsApp. If WhatsApp did not open automatically, please tap below to send your message.
                 </p>
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white border-none"
+                >
+                  <MessageCircle size={18} />
+                  Send on WhatsApp
+                </a>
               </motion.div>
             ) : (
               <motion.form
@@ -196,10 +229,13 @@ export default function ContactPage() {
                   {loading ? (
                     <>
                       <span className="inline-block w-4 h-4 border border-current border-t-transparent rounded-full animate-spin" />
-                      Sending...
+                      Opening WhatsApp...
                     </>
                   ) : (
-                    'Book a Consultation'
+                    <span className="flex items-center justify-center gap-2">
+                      <MessageCircle size={16} />
+                      Send via WhatsApp
+                    </span>
                   )}
                 </button>
               </motion.form>
