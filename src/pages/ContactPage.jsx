@@ -308,6 +308,43 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* Google Maps Location Section */}
+      <section className="pb-24 lg:pb-32 container-studio">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+          <div>
+            <p className="text-label text-bronze mb-2">Location</p>
+            <h2 className="font-display text-3xl sm:text-4xl text-ivory-200 font-light">
+              Visit Our Studio
+            </h2>
+          </div>
+          <a
+            href="https://maps.google.com/?q=Dream+Paradise+Interiors+Pattakasalianvilai+Rd+Vattakarai+Nagercoil+Tamil+Nadu+629002"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-bronze hover:text-ivory-200 transition-colors font-sans"
+          >
+            <MapPin size={14} />
+            Get Directions
+          </a>
+        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="overflow-hidden w-full h-[400px] sm:h-[480px] border border-ivory-200/10 rounded-sm relative shadow-2xl bg-charcoal-900"
+        >
+          <iframe
+            title="Dream Paradise Interiors Location Map"
+            src="https://maps.google.com/maps?q=Dream+Paradise+Interiors+Pattakasalianvilai+Rd+Vattakarai+Nagercoil+Tamil+Nadu+629002&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            className="w-full h-full border-0"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </motion.div>
+      </section>
     </div>
   );
 }
