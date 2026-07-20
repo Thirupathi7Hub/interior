@@ -1,35 +1,20 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { PROJECTS, PROJECT_CATEGORIES } from '../data';
 import { fadeUp, viewportConfig } from '../animations/variants';
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 35, scale: 0.98 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.7,
-      ease: [0.16, 1, 0.3, 1],
-    },
-  },
-};
-
 export default function ProjectsPage() {
   const [activeFilter, setActiveFilter] = useState('All');
+  const containerRef = useRef(null);
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
 
   const filtered = useMemo(() => {
     if (activeFilter === 'All') return PROJECTS;
@@ -37,20 +22,28 @@ export default function ProjectsPage() {
   }, [activeFilter]);
 
   return (
-    <div className="pt-24 min-h-screen bg-charcoal-800">
+    <div ref={containerRef} className="pt-24 min-h-screen bg-charcoal-800 relative">
+      {/* Scroll Progress Bar */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-bronze origin-left z-50"
+        style={{ scaleX }}
+      />
+
       {/* Page header */}
       <section className="py-20 lg:py-28 container-studio">
         <motion.p
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="text-label text-bronze mb-4"
         >
           Portfolio
         </motion.p>
         <motion.h1
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="font-display text-5xl sm:text-6xl lg:text-8xl font-light text-ivory-200 leading-[0.9] mb-6"
         >
@@ -58,7 +51,8 @@ export default function ProjectsPage() {
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="text-body max-w-lg"
         >
@@ -70,7 +64,8 @@ export default function ProjectsPage() {
       <section className="container-studio mb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.3 }}
           className="flex flex-wrap gap-2 sm:gap-4 relative"
         >
@@ -99,14 +94,13 @@ export default function ProjectsPage() {
         </motion.div>
       </section>
 
-      {/* Projects grid with animations */}
+      {/* Projects grid with scroll reveal */}
       <section className="container-studio pb-32">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeFilter}
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             exit={{ opacity: 0, transition: { duration: 0.25 } }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
           >
@@ -114,6 +108,7 @@ export default function ProjectsPage() {
               <ProjectCard
                 key={project.id}
                 project={project}
+                index={i}
                 featured={i === 0 && activeFilter === 'All'}
               />
             ))}
@@ -134,12 +129,18 @@ export default function ProjectsPage() {
   );
 }
 
-function ProjectCard({ project, featured }) {
+function ProjectCard({ project, index, featured }) {
   return (
     <motion.article
-      variants={cardVariants}
+      initial={{ opacity: 0, y: 50, scale: 0.96 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{
+        duration: 0.8,
+        delay: (index % 3) * 0.12,
+        ease: [0.16, 1, 0.3, 1],
+      }}
       whileHover={{ y: -8 }}
-      transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
       className={`group ${featured ? 'md:col-span-2 lg:col-span-2' : ''}`}
     >
       <Link to={`/projects/${project.id}`} className="block">

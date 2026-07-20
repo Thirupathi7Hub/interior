@@ -1,6 +1,6 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useRef, useEffect } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { ArrowLeft, ArrowUpRight, MapPin, Calendar, Maximize } from 'lucide-react';
 import { PROJECTS } from '../data';
 import { fadeUp, viewportConfig } from '../animations/variants';
@@ -12,14 +12,12 @@ export default function ProjectDetailPage() {
 
   const project = PROJECTS.find((p) => p.id === id);
 
-
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ['start start', 'end start'],
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
   });
-
-  const heroImageY = useTransform(scrollYProgress, [0, 1], ['0%', '25%']);
-  const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -39,7 +37,12 @@ export default function ProjectDetailPage() {
 
 
   return (
-    <article className="bg-charcoal-800">
+    <article className="bg-charcoal-800 relative">
+      {/* Scroll Progress Indicator */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-bronze origin-left z-50"
+        style={{ scaleX }}
+      />
       {/* Header */}
       <section className="pt-32 pb-16 bg-charcoal-900 border-b border-ivory-200/5">
         <div className="container-studio relative">
