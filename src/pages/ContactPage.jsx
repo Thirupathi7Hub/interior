@@ -49,15 +49,15 @@ export default function ContactPage() {
     const lines = [
       `*New Inquiry - Dream Paradise Interiors*`,
       ``,
-      `👤 *Name:* ${formData.name || 'Not specified'}`,
-      `📧 *Email:* ${formData.email || 'Not specified'}`,
-      `📞 *Phone:* ${formData.phone || 'Not specified'}`,
-      `🏠 *Project Type:* ${formData.projectType || 'Not specified'}`,
-      `💰 *Budget Range:* ${formData.budget || 'Not specified'}`,
+      `*Name:* ${formData.name || 'Not specified'}`,
+      `*Email:* ${formData.email || 'Not specified'}`,
+      `*Phone:* ${formData.phone || 'Not specified'}`,
+      `*Project Type:* ${formData.projectType || 'Not specified'}`,
+      `*Budget Range:* ${formData.budget || 'Not specified'}`,
     ];
 
     if (formData.message) {
-      lines.push(`💬 *Vision/Message:* ${formData.message}`);
+      lines.push(`*Vision/Message:* ${formData.message}`);
     }
 
     const messageText = lines.join('\n');
