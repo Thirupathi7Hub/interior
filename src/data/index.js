@@ -446,15 +446,15 @@ export const TESTIMONIALS = [
 export const TEAM = [
   {
     name: 'Prakash',
-    role: 'Founder & Chief Designer',
-    bio: 'With a deep passion for customized furniture and modern space optimization, Prakash founded Dream Paradise Interiors in Nagercoil to deliver high-quality, budget-friendly design solutions. The team is known for neat execution, smart material selection, and friendly customer service.',
-    philosophy: 'We design smart, space-saving interiors that maximize both aesthetic beauty and everyday functionality without increasing budgets unnecessarily.',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80',
+    role: 'Founder & Principal Designer',
+    bio: 'Prakash is the Founder and Principal Designer of Luxestudio Turnkey Interiors. Driven by a commitment to 5.0-star customer excellence, he specializes in turnkey luxury interior design, bespoke modular kitchens, space planning, and complete room makeovers across Tirunelveli and Madurai.',
+    philosophy: 'We deliver complete turnkey transformations where flawless architectural precision meets aesthetic luxury and personalized service.',
+    image: '/images/founder.png',
     achievements: [
-      '4.9 Star Rating on Google Reviews',
-      'Custom Fluted Panel & LED Backlit mirror specialist',
-      '150+ Customized Interior installations in Nagercoil',
-      'Neat and clean professional fixing service',
+      '5.0 Star Rating on Google Reviews (22+ Verified Reviews)',
+      'Founder & Principal Designer of Luxestudio Turnkey Interiors',
+      '200+ Successful Turnkey Interior Projects delivered across Tirunelveli & Madurai',
+      'Specialist in Modular Kitchens, Space Planning & Custom Millwork',
     ],
   },
 ];
