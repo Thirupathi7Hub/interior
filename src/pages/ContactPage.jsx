@@ -286,25 +286,6 @@ export default function ContactPage() {
                 content={STUDIO_INFO.address}
               />
             </div>
-
-            {/* Hours */}
-            <div className="mt-12 pt-8 border-t border-ivory-200/10">
-              <p className="text-label text-taupe/60 mb-4">Studio Hours</p>
-              <div className="space-y-2">
-                <div className="flex justify-between text-sm font-sans">
-                  <span className="text-taupe">Monday — Friday</span>
-                  <span className="text-ivory-200/70">10:00 — 19:00</span>
-                </div>
-                <div className="flex justify-between text-sm font-sans">
-                  <span className="text-taupe">Saturday</span>
-                  <span className="text-ivory-200/70">11:00 — 17:00</span>
-                </div>
-                <div className="flex justify-between text-sm font-sans">
-                  <span className="text-taupe">Sunday</span>
-                  <span className="text-ivory-200/40">By appointment</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
