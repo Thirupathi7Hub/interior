@@ -271,7 +271,7 @@ export const SERVICES = [
     shortTitle: 'Residential',
     category: 'Living Spaces',
     description: 'We craft living spaces that reflect who you are — your story, your rhythm, your sense of beauty. From intimate apartments to sprawling villas, every home is a unique narrative.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlTjwjQG0s7-yYVSyg1kkYwAccZCrgoiub85iHn3mMojEZeCn-vz1n19l5IeUM7dV9ZSD5xH96mvz3KT-5KKu8yBAAebeykdO_pb-h3sObs-C2Omaw0lScv3n4eFd5hwtVkb_IbJRZMjQye=s1600',
+    image: '/New folder/1 (5).jpeg',
     icon: 'Home',
     includes: [
       'Full-home interior design',
@@ -289,7 +289,7 @@ export const SERVICES = [
     shortTitle: 'Commercial',
     category: 'Work Environments',
     description: 'Spaces that work harder. We design commercial environments that improve productivity, communicate brand identity, and make lasting impressions on every visitor.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnhBg7WxmVrfucQ66X1CoVWoyeI2vWs5lhW0xYiTLacg2n6dixN-FaJXclbotcSID8BAtfHQRWFUwdjx9UFg2xzTY_TWTin_O9USHQT7XEnC4fESK7Rnp6GGNYrUCAR2J-Fcu2q=s646-k-no',
+    image: '/New folder/1 (7).jpeg',
     icon: 'Building2',
     includes: [
       'Office & workspace design',
@@ -307,7 +307,7 @@ export const SERVICES = [
     shortTitle: 'Space Planning',
     category: 'Spatial Strategy',
     description: 'Good design begins with good planning. We optimize how space is used — improving flow, function, and experience before a single piece of furniture is chosen.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnZvMg39Zgrx4jgF5oXg4ZF1G-pIwLutncSblHhjiyFKcdx8oUL1zwDq9IKaZqsvivgM6d8Yo3ovKYLAjSCq4g_-Obd6CCy26ZYPpGQXOn9ZS_vB0oiVxCiFqsDWc2zuALrNqF9=s677-k-no',
+    image: '/New folder/1 (11).jpeg',
     icon: 'LayoutGrid',
     includes: [
       'Floor plan optimization',
@@ -325,7 +325,7 @@ export const SERVICES = [
     shortTitle: 'Kitchen Design',
     category: 'Culinary Spaces',
     description: 'The kitchen is the heart of the home. We design kitchens that are as beautiful as they are functional — spaces where cooking becomes a pleasure.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnFQdENNz4rTkgbt1mS97RA2rO4YCnbqAt1jUptSwFSOK7ZjqD4wG5iJYcbX9UTsJvIGQzN5DyQRLEw2SdPCM6LC9zAbdrKz2qpwYsvtIVk85PQl-bQ_I8GLdfbigY6Kfmb3Wh3iiVFxXY=s677-k-no',
+    image: '/New folder/1 (20).jpeg',
     icon: 'ChefHat',
     includes: [
       'Custom modular design',
@@ -343,7 +343,7 @@ export const SERVICES = [
     shortTitle: '3D Visualization',
     category: 'Design Preview',
     description: 'See your future home before a single wall is painted. Our photorealistic 3D renders give you complete confidence in every design decision.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnVwud5HSxGr6W8X50QZXBUn18N_1BkOvN-8qqlvAZEgyjYLHIWLUtwvi9gZgAGW52OhJC7ZsCnUuOvYwGyzJYgU1pHtTaxQd6VdwkJm8yIn1LT57r6BGy4T0ix18zVSMKBhwM=s728-k-no',
+    image: '/img/3d_visualization.png',
     icon: 'Layers',
     includes: [
       'Photorealistic 3D renders',
@@ -361,7 +361,7 @@ export const SERVICES = [
     shortTitle: 'Turnkey',
     category: 'Complete Solutions',
     description: 'From first sketch to final walk-through, we manage everything. One point of contact, zero stress, complete transformation.',
-    image: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnVlEMY077OdGaHr2c0FC-BuVv9QxJI9ENzc1n_Rjwd9gem-OZBJYyrhIQtLh38Hj7epYjnxxKerl1p0JssapAez-OLhQZAJe5LHvnJtZ9NJZfNQ4gBaO8DhAVbiJM2GiFc-26t7b0wusk=s677-k-no',
+    image: '/New folder/1 (25).jpeg',
     icon: 'Key',
     includes: [
       'Complete design & planning',
