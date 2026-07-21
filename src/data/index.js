@@ -446,15 +446,15 @@ export const TESTIMONIALS = [
 export const TEAM = [
   {
     name: 'Prakash',
-    role: 'Founder & Principal Designer',
-    bio: 'Prakash is the Founder and Principal Designer of Luxestudio Turnkey Interiors. Driven by a commitment to 5.0-star customer excellence, he specializes in turnkey luxury interior design, bespoke modular kitchens, space planning, and complete room makeovers across Tirunelveli and Madurai.',
-    philosophy: 'We deliver complete turnkey transformations where flawless architectural precision meets aesthetic luxury and personalized service.',
-    image: '/images/founder.png',
+    role: 'Founder & Chief Designer',
+    bio: 'With a deep passion for customized furniture and modern space optimization, Prakash founded Dream Paradise Interiors in Nagercoil to deliver high-quality, budget-friendly design solutions. The team is known for neat execution, smart material selection, and friendly customer service.',
+    philosophy: 'We design smart, space-saving interiors that maximize both aesthetic beauty and everyday functionality without increasing budgets unnecessarily.',
+    image: '/img/founder.png',
     achievements: [
-      '5.0 Star Rating on Google Reviews (22+ Verified Reviews)',
-      'Founder & Principal Designer of Luxestudio Turnkey Interiors',
-      '200+ Successful Turnkey Interior Projects delivered across Tirunelveli & Madurai',
-      'Specialist in Modular Kitchens, Space Planning & Custom Millwork',
+      '4.9 Star Rating on Google Reviews',
+      'Custom Fluted Panel & LED Backlit mirror specialist',
+      '150+ Customized Interior installations in Nagercoil',
+      'Neat and clean professional fixing service',
     ],
   },
 ];
@@ -462,5 +462,5 @@ export const TEAM = [
 export const PROJECT_CATEGORIES = ['All', 'Residential', 'Commercial', 'Luxury', 'Renovation'];
 
 export const CTA_IMAGE = 'https://i.pinimg.com/736x/4a/fe/ae/4afeaeed917ddd4dbd280c3cdd0373ce.jpg';
-export const ABOUT_IMAGE = '/images/founder.png';
+export const ABOUT_IMAGE = 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmlBbVxPxKihet9ys2-8d5ABS4RpQf1WO952kYoF5xRtcQxDAYmRqyzSbZ_Jb9UXZurb2PBbqBMWoSDBbxCT4wbB1zMlXmSRBiTimNLz6mP0Yj5UXof37KePa5d1mxDykVKguat=s677-k-no';
 export const CONTACT_IMAGE = 'https://lh3.googleusercontent.com/p/CIABIhBObQEGW_DefqocyrOoTDWa=s1600';

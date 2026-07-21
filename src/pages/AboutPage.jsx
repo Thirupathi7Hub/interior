@@ -28,7 +28,7 @@ export default function AboutPage() {
             animate="visible"
             className="font-display text-5xl sm:text-6xl lg:text-8xl font-light text-ivory-200 leading-[0.9] mb-12"
           >
-            About Luxe Studio
+            About Dream Paradise
           </motion.h1>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
@@ -39,10 +39,10 @@ export default function AboutPage() {
               animate="visible"
             >
               <p className="text-body text-lg leading-loose mb-6">
-                Luxestudio Turnkey Interiors was founded with a singular commitment: delivering 5.0-star rated turnkey interior transformations combining spatial poetry with architectural precision.
+                Dream Paradise was born in 2020 from a simple conviction: that thoughtful, beautiful design should not be a privilege. It should be accessible to anyone with the vision to pursue it.
               </p>
               <p className="text-body leading-loose">
-                Founded by Prakash, our studio serves Tirunelveli, Madurai, and surrounding regions with a dedicated team of interior designers, space planners, and master craftsmen.
+                Founded by Prakash, our studio has grown from a local practice into a dedicated team of designers, project managers, and craftspeople — all united by a passion for spaces that move people.
               </p>
             </motion.div>
 
@@ -74,7 +74,7 @@ export default function AboutPage() {
         >
           <img
             src={ABOUT_IMAGE}
-            alt="Luxestudio Turnkey Interiors workspace"
+            alt="Dream Paradise Interiors workspace"
             className="w-full h-full object-cover"
             loading="lazy"
           />
