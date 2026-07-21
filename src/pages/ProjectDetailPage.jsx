@@ -162,30 +162,67 @@ export default function ProjectDetailPage() {
         </div>
       </section>
 
-      {/* Project Gallery at the end */}
-      {project.images && project.images.length > 0 && (
-        <section className="pb-24 lg:pb-32 container-studio">
-          <div className="space-y-8 lg:space-y-12">
-            {project.images.map((img, idx) => (
+      {/* Infinite Scroller (Right to Left) Project Gallery */}
+      {(() => {
+        const allGalleryImages = [
+          ...(project.images || []),
+          ...Object.values(project.rooms || {}),
+        ].filter(Boolean);
+
+        if (allGalleryImages.length === 0) return null;
+
+        // Triplicate gallery list for uninterrupted, seamless infinite scrolling
+        const marqueeImages = [...allGalleryImages, ...allGalleryImages, ...allGalleryImages];
+
+        return (
+          <section className="pb-24 lg:pb-32 overflow-hidden">
+            <div className="container-studio mb-8 flex justify-between items-end">
+              <div>
+                <p className="text-label text-bronze mb-2">Visual Showcase</p>
+                <h2 className="font-display text-3xl sm:text-4xl text-ivory-200 font-light">
+                  Project Gallery
+                </h2>
+              </div>
+              <p className="text-xs text-taupe/60 uppercase tracking-widest font-sans hidden sm:block">
+                Infinite Scroll
+              </p>
+            </div>
+
+            {/* Seamless Infinite Marquee Track (Right -> Left) */}
+            <div className="relative w-full overflow-hidden py-4">
+              {/* Gradient Vignette Overlays for smooth edge fading */}
+              <div className="absolute top-0 bottom-0 left-0 w-16 sm:w-32 bg-gradient-to-r from-charcoal-800 to-transparent z-10 pointer-events-none" />
+              <div className="absolute top-0 bottom-0 right-0 w-16 sm:w-32 bg-gradient-to-l from-charcoal-800 to-transparent z-10 pointer-events-none" />
+
               <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 50, scale: 0.97 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                viewport={viewportConfig}
-                transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
-                className="overflow-hidden aspect-[16/9] w-full bg-charcoal-900/50 group border border-ivory-200/5"
+                className="flex gap-6 w-max"
+                animate={{ x: ['0%', '-33.333333%'] }}
+                transition={{
+                  repeat: Infinity,
+                  repeatType: 'loop',
+                  duration: 25,
+                  ease: 'linear',
+                }}
               >
-                <img
-                  src={img}
-                  alt={`${project.title} - ${idx + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
-                  loading="lazy"
-                />
+                {marqueeImages.map((img, idx) => (
+                  <div
+                    key={idx}
+                    className="w-[280px] sm:w-[420px] lg:w-[560px] h-[200px] sm:h-[300px] lg:h-[380px] flex-shrink-0 overflow-hidden border border-ivory-200/10 rounded-sm relative group bg-charcoal-900 shadow-xl"
+                  >
+                    <img
+                      src={img}
+                      alt={`${project.title} gallery preview ${idx + 1}`}
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-charcoal-900/10 group-hover:bg-transparent transition-colors duration-500" />
+                  </div>
+                ))}
               </motion.div>
-            ))}
-          </div>
-        </section>
-      )}
+            </div>
+          </section>
+        );
+      })()}
 
     </article>
   );

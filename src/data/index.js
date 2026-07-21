@@ -40,10 +40,10 @@ export const PROJECTS = [
 
 The living spaces flow seamlessly into each other, separated by subtle material changes rather than walls. Venetian plaster in warm ivory tones grounds the space, while oak-paneled joinery adds warmth and texture.`,
     concept: 'The design concept draws from the Japanese principle of Ma — the beauty of negative space. Every element placed was as carefully considered as every element left out.',
-    heroImage: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlTjwjQG0s7-yYVSyg1kkYwAccZCrgoiub85iHn3mMojEZeCn-vz1n19l5IeUM7dV9ZSD5xH96mvz3KT-5KKu8yBAAebeykdO_pb-h3sObs-C2Omaw0lScv3n4eFd5hwtVkb_IbJRZMjQye=s1600',
-    thumbnail: 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlTjwjQG0s7-yYVSyg1kkYwAccZCrgoiub85iHn3mMojEZeCn-vz1n19l5IeUM7dV9ZSD5xH96mvz3KT-5KKu8yBAAebeykdO_pb-h3sObs-C2Omaw0lScv3n4eFd5hwtVkb_IbJRZMjQye=s1600',
+    heroImage: '/New folder/1 (7).jpeg',
+    thumbnail: '/New folder/1 (7).jpeg',
     images: [
-      'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlTjwjQG0s7-yYVSyg1kkYwAccZCrgoiub85iHn3mMojEZeCn-vz1n19l5IeUM7dV9ZSD5xH96mvz3KT-5KKu8yBAAebeykdO_pb-h3sObs-C2Omaw0lScv3n4eFd5hwtVkb_IbJRZMjQye=s1600',
+      '/New folder/1 (9).jpeg',
       'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmLOgQem78rS_819dqQ-V0bAgr1nLOoxpFPXMwK_C7j54YuQylun6oDvwJvU5QQcLchopi3vIksOaIysL1rZ6hZIZ_IuLnvVEjlia3XcniY7ZyIhibjX0r-waCTzTQSvv9TyrwxjQ=s1600',
       'https://lh3.googleusercontent.com/p/CIHM0ogKEICAgID7lNXRoQE=s1600',
       'https://lh3.googleusercontent.com/p/CIABIhDt7TqF-exxxbLdDli17iT6=s1600',
@@ -271,7 +271,7 @@ export const SERVICES = [
     shortTitle: 'Residential',
     category: 'Living Spaces',
     description: 'We craft living spaces that reflect who you are — your story, your rhythm, your sense of beauty. From intimate apartments to sprawling villas, every home is a unique narrative.',
-    image: '/New folder/1 (5).jpeg',
+    image: '/New folder/1 (6).jpeg',
     icon: 'Home',
     includes: [
       'Full-home interior design',
@@ -289,7 +289,7 @@ export const SERVICES = [
     shortTitle: 'Commercial',
     category: 'Work Environments',
     description: 'Spaces that work harder. We design commercial environments that improve productivity, communicate brand identity, and make lasting impressions on every visitor.',
-    image: '/New folder/1 (7).jpeg',
+    image: '/New folder/1 (5).jpeg',
     icon: 'Building2',
     includes: [
       'Office & workspace design',
@@ -307,7 +307,7 @@ export const SERVICES = [
     shortTitle: 'Space Planning',
     category: 'Spatial Strategy',
     description: 'Good design begins with good planning. We optimize how space is used — improving flow, function, and experience before a single piece of furniture is chosen.',
-    image: '/New folder/1 (11).jpeg',
+    image: '/New folder/1 (23).jpeg',
     icon: 'LayoutGrid',
     includes: [
       'Floor plan optimization',
@@ -361,7 +361,7 @@ export const SERVICES = [
     shortTitle: 'Turnkey',
     category: 'Complete Solutions',
     description: 'From first sketch to final walk-through, we manage everything. One point of contact, zero stress, complete transformation.',
-    image: '/New folder/1 (25).jpeg',
+    image: '/New folder/1 (13).jpeg',
     icon: 'Key',
     includes: [
       'Complete design & planning',
