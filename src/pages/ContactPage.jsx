@@ -319,7 +319,7 @@ export default function ContactPage() {
             </h2>
           </div>
           <a
-            href="https://maps.google.com/?q=Dream+Paradise+Interiors+Pattakasalianvilai+Rd+Vattakarai+Nagercoil+Tamil+Nadu+629002"
+            href="https://maps.google.com/?q=Luxe+Studio+Interior+Neera+Complex+Valluvar+Colony+NGO+A+Colony+Tirunelveli+Tamil+Nadu+627007"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-bronze hover:text-ivory-200 transition-colors font-sans"
@@ -336,8 +336,8 @@ export default function ContactPage() {
           className="overflow-hidden w-full h-[400px] sm:h-[480px] border border-ivory-200/10 rounded-sm relative shadow-2xl bg-charcoal-900"
         >
           <iframe
-            title="Dream Paradise Interiors Location Map"
-            src="https://maps.google.com/maps?q=Dream+Paradise+Interiors+Pattakasalianvilai+Rd+Vattakarai+Nagercoil+Tamil+Nadu+629002&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            title="Luxestudio Turnkey Interiors Location Map"
+            src="https://maps.google.com/maps?q=Luxe+Studio+Interior+Neera+Complex+Valluvar+Colony+NGO+A+Colony+Tirunelveli+Tamil+Nadu+627007&t=&z=16&ie=UTF8&iwloc=&output=embed"
             className="w-full h-full border-0"
             allowFullScreen=""
             loading="lazy"
