@@ -120,11 +120,19 @@ export default function HeroSlider() {
             exit="exit"
             className="absolute inset-0 backface-hidden"
           >
-            {/* Image */}
+            {/* Desktop Image */}
             <img
               src={currentSlide.image}
               alt={currentSlide.title}
-              className="absolute inset-0 w-full h-full object-cover backface-hidden"
+              className="hidden md:block absolute inset-0 w-full h-full object-cover backface-hidden"
+              loading="eager"
+              decoding="async"
+            />
+            {/* Mobile Image */}
+            <img
+              src={currentSlide.mobileImage || currentSlide.image}
+              alt={currentSlide.title}
+              className="block md:hidden absolute inset-0 w-full h-full object-cover backface-hidden"
               loading="eager"
               decoding="async"
             />
