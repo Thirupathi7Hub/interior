@@ -139,7 +139,7 @@ export default function ProjectDetailPage() {
                 transition={{
                   repeat: Infinity,
                   repeatType: 'loop',
-                  duration: 55,
+                  duration: 30,
                   ease: 'linear',
                 }}
               >
