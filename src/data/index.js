@@ -433,5 +433,5 @@ export const TEAM = [
 export const PROJECT_CATEGORIES = ['All', 'Residential', 'Commercial', 'Luxury', 'Renovation'];
 
 export const CTA_IMAGE = 'https://i.pinimg.com/736x/4a/fe/ae/4afeaeed917ddd4dbd280c3cdd0373ce.jpg';
-export const ABOUT_IMAGE = 'https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmlBbVxPxKihet9ys2-8d5ABS4RpQf1WO952kYoF5xRtcQxDAYmRqyzSbZ_Jb9UXZurb2PBbqBMWoSDBbxCT4wbB1zMlXmSRBiTimNLz6mP0Yj5UXof37KePa5d1mxDykVKguat=s677-k-no';
+export const ABOUT_IMAGE = '/New folder/1 (15).jpeg';
 export const CONTACT_IMAGE = '/New folder/1 (7).jpeg';
