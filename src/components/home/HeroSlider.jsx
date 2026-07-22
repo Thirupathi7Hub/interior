@@ -103,50 +103,39 @@ export default function HeroSlider() {
   return (
     <section
       id="hero"
-      className="relative h-screen min-h-[650px] md:h-screen md:min-h-[600px] flex flex-col md:block overflow-hidden bg-charcoal-900"
+      className="relative h-screen min-h-[600px] overflow-hidden bg-charcoal-900"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       {...swipeHandlers}
     >
-      {/* Slides Wrapper for Mobile Split Layout */}
-      <div className="relative h-[48vh] md:absolute md:inset-0 w-full overflow-hidden bg-charcoal-950 flex-shrink-0">
-        <AnimatePresence initial={false} custom={direction} mode="sync">
-          <motion.div
-            key={currentIndex}
-            custom={direction}
-            variants={slideVariants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            className="absolute inset-0 backface-hidden"
-          >
-            {/* Desktop Image */}
-            <img
-              src={currentSlide.image}
-              alt={currentSlide.title}
-              className="hidden md:block absolute inset-0 w-full h-full object-cover backface-hidden"
-              loading="eager"
-              decoding="async"
-            />
-            {/* Mobile Image */}
-            <img
-              src={currentSlide.mobileImage || currentSlide.image}
-              alt={currentSlide.title}
-              className="block md:hidden absolute inset-0 w-full h-full object-cover backface-hidden"
-              loading="eager"
-              decoding="async"
-            />
-            {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-charcoal-900/80 via-charcoal-900/40 to-charcoal-900/20 hidden md:block" />
-            <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/60 via-transparent to-charcoal-900/20 hidden md:block" />
-            <div className="absolute inset-0 bg-charcoal-900/20 md:hidden" />
-          </motion.div>
-        </AnimatePresence>
-      </div>
+      {/* Slides */}
+      <AnimatePresence initial={false} custom={direction} mode="sync">
+        <motion.div
+          key={currentIndex}
+          custom={direction}
+          variants={slideVariants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          className="absolute inset-0 will-change-transform"
+        >
+          {/* Image */}
+          <img
+            src={currentSlide.image}
+            alt={currentSlide.title}
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+            decoding="async"
+          />
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-charcoal-900/80 via-charcoal-900/40 to-charcoal-900/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/60 via-transparent to-charcoal-900/20" />
+        </motion.div>
+      </AnimatePresence>
 
       {/* Content */}
-      <div className="relative z-10 flex-1 md:h-full flex flex-col bg-charcoal-900 md:bg-transparent">
-        <div className="flex-1 flex items-center md:items-end container-studio pt-6 pb-20 md:pb-24 lg:pb-32">
+      <div className="relative z-10 h-full flex flex-col">
+        <div className="flex-1 flex items-end container-studio pb-24 lg:pb-32">
           <div className="w-full max-w-3xl">
             {/* Slide counter */}
             <AnimatePresence mode="wait">
@@ -177,7 +166,7 @@ export default function HeroSlider() {
                   initial={{ y: '100%', opacity: 0 }}
                   animate={{ y: 0, opacity: 1, transition: { duration: 1.0, delay: 0.2, ease: [0.16, 1, 0.3, 1] } }}
                   exit={{ y: '-100%', opacity: 0, transition: { duration: 0.5, ease: [0.87, 0, 0.13, 1] } }}
-                  className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-ivory-200 leading-[0.9] mb-6"
+                  className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-ivory-200 leading-[0.9] mb-6"
                 >
                   {currentSlide.title}
                 </motion.h1>
@@ -227,7 +216,7 @@ export default function HeroSlider() {
       </div>
 
       {/* Right side controls */}
-      <div className="absolute right-4 lg:right-12 top-[24vh] md:top-1/2 -translate-y-1/2 z-20 flex flex-col gap-4">
+      <div className="absolute right-4 lg:right-12 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-4">
         <button
           id="hero-prev"
           onClick={prev}

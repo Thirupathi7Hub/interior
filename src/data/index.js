@@ -190,7 +190,6 @@ export const HERO_SLIDES = [
     location: 'Vattakarai, Nagercoil',
     description: 'A tranquil family home where clean lines meet warm textures.',
     image: '/New folder/1 (7).jpeg',
-    mobileImage: '/New folder/1 (7).jpeg',
     accent: '#c4a880',
   },
   {
@@ -201,7 +200,6 @@ export const HERO_SLIDES = [
     location: 'Kanyakumari',
     description: 'A stunning coastal villa that captures the beauty of Kanyakumari\'s shores.',
     image: '/New folder/1 (1).jpeg',
-    mobileImage: '/New folder/1 (1).jpeg',
     accent: '#a0b0c0',
   },
   {
@@ -212,7 +210,6 @@ export const HERO_SLIDES = [
     location: 'Villupuram',
     description: 'A premium hair transplant clinic and aesthetic salon.',
     image: '/New folder/1 (5).jpeg',
-    mobileImage: '/New folder/1 (5).jpeg',
     accent: '#c4a880',
   },
   {
@@ -223,7 +220,6 @@ export const HERO_SLIDES = [
     location: 'Nagercoil',
     description: 'Timeless elegance and traditional charm integrated with modern convenience.',
     image: '/New folder/1 (10).jpeg',
-    mobileImage: '/New folder/1 (10).jpeg',
     accent: '#a0b0c0',
   },
   {
@@ -234,7 +230,6 @@ export const HERO_SLIDES = [
     location: 'Nagercoil',
     description: 'A modern, high-tech kitchen space where style meets functionality.',
     image: '/New folder/1 (14).jpeg',
-    mobileImage: '/New folder/1 (14).jpeg',
     accent: '#c4a880',
   },
 ];
