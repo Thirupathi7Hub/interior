@@ -73,11 +73,11 @@ export default function TestimonialsSection() {
 
         {/* Testimonial */}
         <div
-          className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start"
+          className="max-w-4xl"
           {...swipeHandlers}
         >
           {/* Quote */}
-          <div className="lg:col-span-8">
+          <div>
             {/* Large quote mark */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -112,26 +112,6 @@ export default function TestimonialsSection() {
                     </p>
                   </div>
                 </div>
-              </motion.div>
-            </AnimatePresence>
-          </div>
-
-          {/* Project image */}
-          <div className="lg:col-span-4">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={`img-${current}`}
-                initial={{ opacity: 0, scale: 1.05 }}
-                animate={{ opacity: 1, scale: 1, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] } }}
-                exit={{ opacity: 0, transition: { duration: 0.3 } }}
-                className="aspect-[4/5] overflow-hidden"
-              >
-                <img
-                  src={t.image}
-                  alt={t.project}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
               </motion.div>
             </AnimatePresence>
           </div>
