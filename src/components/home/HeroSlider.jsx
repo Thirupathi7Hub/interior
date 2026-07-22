@@ -117,13 +117,13 @@ export default function HeroSlider() {
           initial="enter"
           animate="center"
           exit="exit"
-          className="absolute inset-0 will-change-transform"
+          className="absolute inset-0 backface-hidden"
         >
           {/* Image */}
           <img
             src={currentSlide.image}
             alt={currentSlide.title}
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover backface-hidden"
             loading="eager"
             decoding="async"
           />
