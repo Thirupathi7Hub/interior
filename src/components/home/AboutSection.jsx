@@ -61,7 +61,7 @@ export default function AboutSection() {
               viewport={viewportConfig}
               className="text-body mb-6 max-w-lg"
             >
-              Founded in 2020, Dream Paradise Interiors was born from a belief that exceptional design belongs in every space. We have grown into one of Nagercoil's most trusted design teams, known for smart planning, beautiful execution, and client satisfaction.
+              Founded in 2020, Luxe Studio was born from a belief that exceptional design belongs in every space. We have grown into one of Nagercoil's most trusted design teams, known for smart planning, beautiful execution, and client satisfaction.
             </motion.p>
 
             <motion.p

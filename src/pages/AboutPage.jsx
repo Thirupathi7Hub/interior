@@ -28,7 +28,7 @@ export default function AboutPage() {
             animate="visible"
             className="font-display text-5xl sm:text-6xl lg:text-8xl font-light text-ivory-200 leading-[0.9] mb-12"
           >
-            About Dream Paradise
+            About Luxe Studio
           </motion.h1>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
@@ -39,7 +39,7 @@ export default function AboutPage() {
               animate="visible"
             >
               <p className="text-body text-lg leading-loose mb-6">
-                Dream Paradise was born in 2020 from a simple conviction: that thoughtful, beautiful design should not be a privilege. It should be accessible to anyone with the vision to pursue it.
+                Luxe Studio was born in 2020 from a simple conviction: that thoughtful, beautiful design should not be a privilege. It should be accessible to anyone with the vision to pursue it.
               </p>
               <p className="text-body leading-loose">
                 Founded by Prakash, our studio has grown from a local practice into a dedicated team of designers, project managers, and craftspeople — all united by a passion for spaces that move people.
@@ -74,7 +74,7 @@ export default function AboutPage() {
         >
           <img
             src={ABOUT_IMAGE}
-            alt="Dream Paradise Interiors workspace"
+            alt="Luxe Studio workspace"
             className="w-full h-full object-cover"
             loading="lazy"
           />

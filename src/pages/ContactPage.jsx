@@ -47,7 +47,7 @@ export default function ContactPage() {
     const phoneNumber = STUDIO_INFO.whatsapp.replace(/[^0-9]/g, '');
 
     const lines = [
-      `*New Inquiry - Dream Paradise Interiors*`,
+      `*New Inquiry - Luxe Studio*`,
       ``,
       `*Name:* ${formData.name || 'Not specified'}`,
       `*Email:* ${formData.email || 'Not specified'}`,

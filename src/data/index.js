@@ -418,7 +418,7 @@ export const TEAM = [
   {
     name: 'Prakash',
     role: 'Founder & Chief Designer',
-    bio: 'With a deep passion for customized furniture and modern space optimization, Prakash founded Dream Paradise Interiors in Nagercoil to deliver high-quality, budget-friendly design solutions. The team is known for neat execution, smart material selection, and friendly customer service.',
+    bio: 'With a deep passion for customized furniture and modern space optimization, Prakash founded Luxe Studio in Nagercoil to deliver high-quality, budget-friendly design solutions. The team is known for neat execution, smart material selection, and friendly customer service.',
     philosophy: 'We design smart, space-saving interiors that maximize both aesthetic beauty and everyday functionality without increasing budgets unnecessarily.',
     image: '/img/founder.png',
     achievements: [
