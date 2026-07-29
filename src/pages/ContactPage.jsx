@@ -22,8 +22,25 @@ const BUDGET_RANGES = [
   '₹60 Lakhs +',
   'Not decided yet',
 ];
+const BRANCHES = {
+  trichy: {
+    name: 'Trichy (Main Branch)',
+    address: 'No- 143, Luxe Studio Interior, Lakshmi complex, Salai Rd, Thillai Nagar, Tiruchirappalli, Tamil Nadu 620018',
+    mapUrl: 'https://maps.google.com/maps?q=No-+143%2C+Luxe+Studio+Interior%2C+Lakshmi+complex%2C+Salai%2C+Thillai+Nagar%2C+Tiruchirappalli%2C+Tamil+Nadu+620018&t=&z=16&ie=UTF8&iwloc=&output=embed',
+    directionsUrl: 'https://maps.google.com/?q=No-+143%2C+Luxe+Studio+Interior%2C+Lakshmi+complex%2C+Salai%2C+Thillai+Nagar%2C+Tiruchirappalli%2C+Tamil+Nadu+620018'
+  },
+  tirunelveli: {
+    name: 'Tirunelveli Branch',
+    address: '3/1F Neera Complex, Valluvar Colony, Jeba garden to Rediarpatti Road, NGO ‘A’ Colony, Thirumal Nagar, Tirunelveli, Tamil Nadu 627007',
+    mapUrl: 'https://maps.google.com/maps?q=Luxe+Studio+Interior+Neera+Complex+Valluvar+Colony+NGO+A+Colony+Tirunelveli+Tamil+Nadu+627007&t=&z=16&ie=UTF8&iwloc=&output=embed',
+    directionsUrl: 'https://maps.google.com/?q=Luxe+Studio+Interior+Neera+Complex+Valluvar+Colony+NGO+A+Colony+Tirunelveli+Tamil+Nadu+627007'
+  }
+};
 
 export default function ContactPage() {
+  const [activeBranch, setActiveBranch] = useState('trichy');
+  const branch = BRANCHES[activeBranch];
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -292,8 +309,13 @@ export default function ContactPage() {
               />
               <ContactItem
                 icon={<MapPin size={16} />}
-                label="Studio"
-                content={STUDIO_INFO.address}
+                label="Main Branch (Trichy)"
+                content={BRANCHES.trichy.address}
+              />
+              <ContactItem
+                icon={<MapPin size={16} />}
+                label="Tirunelveli Branch"
+                content={BRANCHES.tirunelveli.address}
               />
             </div>
           </div>
@@ -302,33 +324,62 @@ export default function ContactPage() {
 
       {/* Google Maps Location Section */}
       <section className="pb-24 lg:pb-32 container-studio">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 border-b border-ivory-200/5 pb-6">
           <div>
             <p className="text-label text-bronze mb-2">Location</p>
-            <h2 className="font-display text-3xl sm:text-4xl text-ivory-200 font-light">
-              Visit Our Studio
+            <h2 className="font-display text-3xl sm:text-4xl text-ivory-200 font-light mb-4 md:mb-0">
+              Our Locations
             </h2>
           </div>
-          <a
-            href="https://maps.google.com/?q=Luxe+Studio+Interior+Neera+Complex+Valluvar+Colony+NGO+A+Colony+Tirunelveli+Tamil+Nadu+627007"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-bronze hover:text-ivory-200 transition-colors font-sans"
-          >
-            <MapPin size={14} />
-            Get Directions
-          </a>
+          
+          <div className="flex flex-wrap items-center gap-4">
+            <div className="flex bg-charcoal-900 border border-ivory-200/10 p-1 rounded-sm">
+              <button
+                type="button"
+                onClick={() => setActiveBranch('trichy')}
+                className={`px-4 py-2 text-xs font-sans uppercase tracking-widest transition-all duration-300 rounded-sm ${
+                  activeBranch === 'trichy'
+                    ? 'bg-bronze text-charcoal-800 font-medium'
+                    : 'text-taupe hover:text-ivory-200'
+                }`}
+              >
+                Trichy (Main)
+              </button>
+              <button
+                type="button"
+                onClick={() => setActiveBranch('tirunelveli')}
+                className={`px-4 py-2 text-xs font-sans uppercase tracking-widest transition-all duration-300 rounded-sm ${
+                  activeBranch === 'tirunelveli'
+                    ? 'bg-bronze text-charcoal-800 font-medium'
+                    : 'text-taupe hover:text-ivory-200'
+                }`}
+              >
+                Tirunelveli
+              </button>
+            </div>
+            
+            <a
+              href={branch.directionsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-bronze hover:text-ivory-200 transition-colors font-sans border border-bronze/30 hover:border-ivory-200 px-4 py-2.5 rounded-sm"
+            >
+              <MapPin size={14} />
+              Get Directions
+            </a>
+          </div>
         </div>
+
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          key={activeBranch}
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
           className="overflow-hidden w-full h-[400px] sm:h-[480px] border border-ivory-200/10 rounded-sm relative shadow-2xl bg-charcoal-900"
         >
           <iframe
-            title="Luxestudio Turnkey Interiors Location Map"
-            src="https://maps.google.com/maps?q=Luxe+Studio+Interior+Neera+Complex+Valluvar+Colony+NGO+A+Colony+Tirunelveli+Tamil+Nadu+627007&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            title={`${branch.name} Location Map`}
+            src={branch.mapUrl}
             className="w-full h-full border-0"
             allowFullScreen=""
             loading="lazy"
