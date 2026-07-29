@@ -264,8 +264,18 @@ export default function ContactPage() {
               <ContactItem
                 icon={<Phone size={16} />}
                 label="Phone"
-                content={STUDIO_INFO.phone}
-                href={`tel:${STUDIO_INFO.phone}`}
+                content={
+                  <div className="flex flex-col gap-1">
+                    <a href={`tel:${STUDIO_INFO.phone}`} className="hover:text-bronze transition-colors duration-300">
+                      {STUDIO_INFO.phone}
+                    </a>
+                    {STUDIO_INFO.secondaryPhone && (
+                      <a href={`tel:${STUDIO_INFO.secondaryPhone}`} className="hover:text-bronze transition-colors duration-300">
+                        {STUDIO_INFO.secondaryPhone}
+                      </a>
+                    )}
+                  </div>
+                }
               />
               <ContactItem
                 icon={<MessageCircle size={16} />}

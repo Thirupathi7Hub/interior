@@ -85,6 +85,16 @@ export default function Footer() {
                   <span>{STUDIO_INFO.phone}</span>
                 </a>
               </li>
+              {STUDIO_INFO.secondaryPhone && (
+                <li className="pl-[26px] -mt-2">
+                  <a
+                    href={`tel:${STUDIO_INFO.secondaryPhone}`}
+                    className="text-taupe text-sm hover:text-ivory-200 transition-colors duration-300"
+                  >
+                    {STUDIO_INFO.secondaryPhone}
+                  </a>
+                </li>
+              )}
               <li>
                 <a
                   href={`mailto:${STUDIO_INFO.email}`}
