@@ -39,7 +39,7 @@ export default function AboutPage() {
               animate="visible"
             >
               <p className="text-body text-lg leading-loose mb-6">
-                Luxe Studio was born in 2020 from a simple conviction: that thoughtful, beautiful design should not be a privilege. It should be accessible to anyone with the vision to pursue it.
+                Luxe Studio was born in 2010 from a simple conviction: that thoughtful, beautiful design should not be a privilege. It should be accessible to anyone with the vision to pursue it.
               </p>
               <p className="text-body leading-loose">
                 Founded by Prakash, our studio has grown from a local practice into a dedicated team of designers, project managers, and craftspeople — all united by a passion for spaces that move people.
