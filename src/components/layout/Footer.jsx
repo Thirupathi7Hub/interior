@@ -29,18 +29,9 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-body text-sm max-w-xs leading-relaxed mb-8">
-              {STUDIO_INFO.description} Based in Mumbai, designing for those who believe in the transformative power of space.
+              {STUDIO_INFO.description} Based in Tamil Nadu, designing for those who believe in the transformative power of space.
             </p>
             <div className="flex items-center gap-4">
-              <a
-                href={STUDIO_INFO.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 border border-ivory-200/20 flex items-center justify-center text-taupe hover:text-ivory-200 hover:border-bronze transition-all duration-300"
-                aria-label="Social Media"
-              >
-                <Share2 size={16} />
-              </a>
               <a
                 href={`mailto:${STUDIO_INFO.email}`}
                 className="w-10 h-10 border border-ivory-200/20 flex items-center justify-center text-taupe hover:text-ivory-200 hover:border-bronze transition-all duration-300"
@@ -120,7 +111,7 @@ export default function Footer() {
             &copy; {year} {STUDIO_INFO.brand}. All rights reserved.
           </p>
           <p className="text-xs text-taupe/40 font-sans">
-            Design &amp; Craft — Mumbai
+            Design &amp; Craft — Tamil Nadu
           </p>
         </div>
       </div>
