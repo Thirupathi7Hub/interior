@@ -33,10 +33,10 @@ export const PROJECTS = [
     id: 'LuxuryResidential',
     title: 'Luxury Residential',
     category: 'Residential',
-    location: 'Vattakarai, Nagercoil',
+    location: 'Vattakarai, Tirunelveli',
     year: 2024,
-    description: 'A serene luxury residence in Vattakarai, Nagercoil, combining modern minimalism with warm, traditional elements.',
-    story: `Designed for a modern family in Nagercoil, this spacious home is a perfect blend of high-end luxurious comfort and vernacular architectural details. The design focuses on natural light, cross-ventilation, and high ceilings that keep the space cool and inviting.
+    description: 'A serene luxury residence in Vattakarai, Tirunelveli, combining modern minimalism with warm, traditional elements.',
+    story: `Designed for a modern family in Tirunelveli, this spacious home is a perfect blend of high-end luxurious comfort and vernacular architectural details. The design focuses on natural light, cross-ventilation, and high ceilings that keep the space cool and inviting.
 
 Solid wood paneling, custom-crafted seating, and hand-selected natural stones give this residence a timeless character. Every room is carefully planned to transition smoothly into the next, maintaining a balance between cozy private rooms and grand open gathering spaces.`,
     concept: 'Minimalist tropical luxury where local warmth meets elegant modern design.',
@@ -108,10 +108,10 @@ The reception welcomes clients with a signature backlit reception desk, custom f
     id: 'mobile-shop',
     title: 'MobileShop Renovation',
     category: 'Renovation',
-    location: 'Pattakasalianvilai, Nagercoil',
+    location: 'Pattakasalianvilai, Tirunelveli',
     year: 2023,
     description: 'A modern commercial retail space optimized for premium mobile devices, featuring clean presentation counters and smart space planning.',
-    story: `Transforming a compact retail store in Pattakasalianvilai, Nagercoil, into a state-of-the-art mobile and electronics showroom required a complete spatial overhaul. We prioritized traffic flow, storage integration, and product visibility.
+    story: `Transforming a compact retail store in Pattakasalianvilai, Tirunelveli, into a state-of-the-art mobile and electronics showroom required a complete spatial overhaul. We prioritized traffic flow, storage integration, and product visibility.
 
 By introducing sleek floating glass showcases, minimalist display columns, and smart storage behind hidden panels, we maximized the display potential without cluttering the path. A custom lighting scheme with high-CRI LEDs makes the products pop, while a signature wood-accented service counter offers an approachable area for customer interactions and support.`,
     concept: 'High-tech minimalism—clean lines, smart organization, and interactive retail zones.',
@@ -160,8 +160,8 @@ Teak wood columns, custom-carved architraves, and premium stone cladding create 
     category: 'Residential',
     location: 'Nagercoil',
     year: 2022,
-    description: 'A state-of-the-art modular kitchen in Nagercoil, designed for efficient culinary workflows and featuring sleek acrylic cabinetry.',
-    story: `This modern kitchen project in Nagercoil was designed around the golden work triangle, prioritizing ergonomics, easy maintenance, and premium visual appeal. We utilized high-gloss scratch-resistant acrylic cabinets in a sophisticated dual-tone palette, combined with a durable quartz countertop.
+    description: 'A state-of-the-art modular kitchen in Tirunelveli, designed for efficient culinary workflows and featuring sleek acrylic cabinetry.',
+    story: `This modern kitchen project in Tirunelveli was designed around the golden work triangle, prioritizing ergonomics, easy maintenance, and premium visual appeal. We utilized high-gloss scratch-resistant acrylic cabinets in a sophisticated dual-tone palette, combined with a durable quartz countertop.
 
 Every drawer is equipped with soft-close tandem runners and integrated organizers. Ambient strip lighting under the wall cabinets illuminates the prep areas, while a dedicated breakfast counter serves as a casual space for quick meals and family conversations.`,
     concept: 'Elegant efficiency—where culinary precision meets high-end modern materials.',
@@ -187,7 +187,7 @@ export const HERO_SLIDES = [
     projectId: 'LuxuryResidential',
     title: 'Luxury Residential',
     category: 'Residential Interior',
-    location: 'Vattakarai, Nagercoil',
+    location: 'Vattakarai, Tirunelveli',
     description: 'A tranquil family home where clean lines meet warm textures.',
     image: '/New folder/1 (7).jpeg',
     mobileImage: '/New folder/1 (18).jpeg',
@@ -220,7 +220,7 @@ export const HERO_SLIDES = [
     projectId: 'classicinterior',
     title: 'Classic Design',
     category: 'Residential',
-    location: 'Nagercoil',
+    location: 'Tirunelveli',
     description: 'Timeless elegance and traditional charm integrated with modern convenience.',
     image: '/New folder/1 (10).jpeg',
     mobileImage: '/New folder/1 (33).jpeg',
@@ -231,7 +231,7 @@ export const HERO_SLIDES = [
     projectId: 'ModernKitchen',
     title: 'Modern Kitchen',
     category: 'Residential Design',
-    location: 'Nagercoil',
+    location: 'Tirunelveli',
     description: 'A modern, high-tech kitchen space where style meets functionality.',
     image: '/New folder/1 (14).jpeg',
     mobileImage: '/New folder/1 (14).jpeg',
@@ -418,13 +418,13 @@ export const TEAM = [
   {
     name: 'Balaganesan',
     role: 'Founder & Chief Designer',
-    bio: 'With a deep passion for customized furniture and modern space optimization, Balaganesan founded Luxe Studio in Nagercoil to deliver high-quality, budget-friendly design solutions. The team is known for neat execution, smart material selection, and friendly customer service.',
+    bio: 'With a deep passion for customized furniture and modern space optimization, Balaganesan founded Luxe Studio in Tirunelveli to deliver high-quality, budget-friendly design solutions. The team is known for neat execution, smart material selection, and friendly customer service.',
     philosophy: 'We design smart, space-saving interiors that maximize both aesthetic beauty and everyday functionality without increasing budgets unnecessarily.',
     image: '/img/founder.png',
     achievements: [
       '4.9 Star Rating on Google Reviews',
       'Custom Fluted Panel & LED Backlit mirror specialist',
-      '150+ Customized Interior installations in Nagercoil',
+      '150+ Customized Interior installations in Tirunelveli',
       'Neat and clean professional fixing service',
     ],
   },
