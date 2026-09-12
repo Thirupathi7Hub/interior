@@ -115,14 +115,13 @@ High-end marble floors, customized gold-accented lighting fixtures, and a soothi
 
 Every drawer is equipped with soft-close tandem runners and integrated organizers. Ambient strip lighting under the wall cabinets illuminates the prep areas, while a dedicated breakfast counter serves as a casual space for quick meals and family conversations.`,
     concept: 'Elegant efficiency—where culinary precision meets high-end modern materials.',
-    heroImage: '/New/IMG_0563.PNG',
-    thumbnail: '/New/IMG_0563.PNG',
+    heroImage: '/New/IMG_0563.png',
+    thumbnail: '/New/IMG_0563.png',
     images: [
-      '/New/IMG_0562.PNG',
-      '/New/IMG_0563.PNG',
-      '/New/IMG_0565.PNG',
+      '/New/IMG_0562.png',
+      '/New/IMG_0563.png',
+      '/New/IMG_0565.png',
       '/New/IMG_0748.jpeg',
-      
     ],
     featured: false,
     tags: ['Commercial'],
