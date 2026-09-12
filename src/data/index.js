@@ -55,8 +55,32 @@ Solid wood paneling, custom-crafted seating, and hand-selected natural stones gi
     duration: '8 months',
   },
   {
-    id: 'LuxuryDesign',
-    title: 'Luxury Design',
+    id: 'homeinterior',
+    title: 'Home interior',
+    category: 'Residential',
+    location: 'Nagercoil',
+    year: 2022,
+    description: 'A state-of-the-art modular kitchen in Tirunelveli, designed for efficient culinary workflows and featuring sleek acrylic cabinetry.',
+    story: `This modern kitchen project in Tirunelveli was designed around the golden work triangle, prioritizing ergonomics, easy maintenance, and premium visual appeal. We utilized high-gloss scratch-resistant acrylic cabinets in a sophisticated dual-tone palette, combined with a durable quartz countertop.
+
+Every drawer is equipped with soft-close tandem runners and integrated organizers. Ambient strip lighting under the wall cabinets illuminates the prep areas, while a dedicated breakfast counter serves as a casual space for quick meals and family conversations.`,
+    concept: 'Elegant efficiency—where culinary precision meets high-end modern materials.',
+    heroImage: '/New/IMG_0549.jpeg',
+    thumbnail: '/New/IMG_0549.jpeg',
+    images: [
+      '/New/IMG_0544.jpeg',
+      '/New/IMG_0546.jpeg',
+      '/New/IMG_0549.jpeg',
+      '/New/IMG_0551.jpeg',
+    ],
+    featured: false,
+    tags: ['Residential'],
+    size: '2,400 sq ft',
+    duration: '4 months',
+  },
+  {
+    id: 'TheGrandDesign',
+    title: 'The Grand Design',
     category: 'Luxury',
     location: 'Kanyakumari',
     year: 2024,
@@ -78,6 +102,61 @@ High-end marble floors, customized gold-accented lighting fixtures, and a soothi
     tags: ['Luxury', 'Residential'],
     size: '6,500 sq ft',
     duration: '12 months',
+  },
+
+  {
+    id: 'jewelry',
+    title: 'Jewelry shop',
+    category: 'Commercial',
+    location: 'Nagercoil',
+    year: 2022,
+    description: 'A state-of-the-art jewelry shop in Nagercoil, designed for efficient display and featuring sleek acrylic cabinetry.',
+    story: `This modern jewelry shop project in Nagercoil was designed around the golden work triangle, prioritizing ergonomics, easy maintenance, and premium visual appeal. We utilized high-gloss scratch-resistant acrylic cabinets in a sophisticated dual-tone palette, combined with a durable quartz countertop.
+
+Every drawer is equipped with soft-close tandem runners and integrated organizers. Ambient strip lighting under the wall cabinets illuminates the prep areas, while a dedicated breakfast counter serves as a casual space for quick meals and family conversations.`,
+    concept: 'Elegant efficiency—where culinary precision meets high-end modern materials.',
+    heroImage: '/New/IMG_0563.PNG',
+    thumbnail: '/New/IMG_0563.PNG',
+    images: [
+      '/New/IMG_0562.PNG',
+      '/New/IMG_0563.PNG',
+      '/New/IMG_0565.PNG',
+      '/New/IMG_0748.jpeg',
+      
+    ],
+    featured: false,
+    tags: ['Commercial'],
+    size: '2,400 sq ft',
+    duration: '4 months',
+  },
+  {
+    id: 'CorporateWorkspace',
+    title: 'Corporate Workspace',
+    category: 'Commercial',
+    location: 'Nagercoil',
+    year: 2022,
+    description: 'A state-of-the-art Corporate Workspace in Nagercoil, designed for efficient display and featuring sleek acrylic cabinetry.',
+    story: `This modern Corporate Workspace project in Nagercoil was designed around the golden work triangle, prioritizing ergonomics, easy maintenance, and premium visual appeal. We utilized high-gloss scratch-resistant acrylic cabinets in a sophisticated dual-tone palette, combined with a durable quartz countertop.
+
+Every drawer is equipped with soft-close tandem runners and integrated organizers. Ambient strip lighting under the wall cabinets illuminates the prep areas, while a dedicated breakfast counter serves as a casual space for quick meals and family conversations.`,
+    concept: 'Elegant efficiency—where culinary precision meets high-end modern materials.',
+    heroImage: '/New/IMG_0737.jpeg',
+    thumbnail: '/New/IMG_0737.jpeg',
+    images: [
+      '/New/IMG_0730.jpeg',
+      '/New/IMG_0734.jpeg',
+      '/New/IMG_0731.jpeg',
+      '/New/IMG_0735.jpeg',
+      '/New/IMG_0736.jpeg',
+      '/New/IMG_0741.jpeg',
+
+      
+      
+    ],
+    featured: false,
+    tags: ['Commercial'],
+    size: '2,400 sq ft',
+    duration: '4 months',
   },
   {
     id: 'Grohair',
@@ -104,31 +183,37 @@ The reception welcomes clients with a signature backlit reception desk, custom f
     size: '3,800 sq ft',
     duration: '6 months',
   },
-  {
-    id: 'mobile-shop',
-    title: 'MobileShop Renovation',
-    category: 'Renovation',
-    location: 'Pattakasalianvilai, Tirunelveli',
-    year: 2023,
-    description: 'A modern commercial retail space optimized for premium mobile devices, featuring clean presentation counters and smart space planning.',
-    story: `Transforming a compact retail store in Pattakasalianvilai, Tirunelveli, into a state-of-the-art mobile and electronics showroom required a complete spatial overhaul. We prioritized traffic flow, storage integration, and product visibility.
 
-By introducing sleek floating glass showcases, minimalist display columns, and smart storage behind hidden panels, we maximized the display potential without cluttering the path. A custom lighting scheme with high-CRI LEDs makes the products pop, while a signature wood-accented service counter offers an approachable area for customer interactions and support.`,
-    concept: 'High-tech minimalism—clean lines, smart organization, and interactive retail zones.',
-    heroImage: '/New folder/1 (29).jpeg',
-    thumbnail: '/New folder/1 (29).jpeg',
+
+  {
+    id: 'institutionalinterior',
+    title: 'Institutional Interior',
+    category: 'Commercial',
+    location: 'Nagercoil',
+    year: 2022,
+    description: 'A state-of-the-art institutional interior in Nagercoil, designed for efficient display and featuring sleek acrylic cabinetry.',
+    story: `This modern institutional interior project in Nagercoil was designed around the golden work triangle, prioritizing ergonomics, easy maintenance, and premium visual appeal. We utilized high-gloss scratch-resistant acrylic cabinets in a sophisticated dual-tone palette, combined with a durable quartz countertop.
+
+Every drawer is equipped with soft-close tandem runners and integrated organizers. Ambient strip lighting under the wall cabinets illuminates the prep areas, while a dedicated breakfast counter serves as a casual space for quick meals and family conversations.`,
+    concept: 'Elegant efficiency—where culinary precision meets high-end modern materials.',
+    heroImage: '/New/IMG_0569.jpeg',
+    thumbnail: '/New/IMG_0569.jpeg',
     images: [
-      '/New folder/1 (30).jpeg',
-      '/New folder/1 (28).jpeg',
-      '/New folder/1 (31).jpeg',
-      '/New folder/1 (32).jpeg',
-      '/New folder/1 (29).jpeg',
+      '/New/IMG_0566.jpeg',
+      '/New/IMG_0569.jpeg',
+      '/New/IMG_0570.jpeg',
+      '/New/IMG_0571.jpeg',
+      
+      
     ],
     featured: false,
-    tags: ['Renovation', 'Commercial'],
-    size: '1,800 sq ft',
-    duration: '5 months',
+    tags: ['Commercial'],
+    size: '2,400 sq ft',
+    duration: '4 months',
   },
+  
+  
+  
   {
     id: 'classicinterior',
     title: 'Classic Interior Design',
@@ -178,6 +263,34 @@ Every drawer is equipped with soft-close tandem runners and integrated organizer
     tags: ['Residential'],
     size: '2,400 sq ft',
     duration: '4 months',
+  },
+  
+  
+  
+  {
+    id: 'mobile-shop',
+    title: 'MobileShop Renovation',
+    category: 'Renovation',
+    location: 'Pattakasalianvilai, Tirunelveli',
+    year: 2023,
+    description: 'A modern commercial retail space optimized for premium mobile devices, featuring clean presentation counters and smart space planning.',
+    story: `Transforming a compact retail store in Pattakasalianvilai, Tirunelveli, into a state-of-the-art mobile and electronics showroom required a complete spatial overhaul. We prioritized traffic flow, storage integration, and product visibility.
+
+By introducing sleek floating glass showcases, minimalist display columns, and smart storage behind hidden panels, we maximized the display potential without cluttering the path. A custom lighting scheme with high-CRI LEDs makes the products pop, while a signature wood-accented service counter offers an approachable area for customer interactions and support.`,
+    concept: 'High-tech minimalism—clean lines, smart organization, and interactive retail zones.',
+    heroImage: '/New folder/1 (29).jpeg',
+    thumbnail: '/New folder/1 (29).jpeg',
+    images: [
+      '/New folder/1 (30).jpeg',
+      '/New folder/1 (28).jpeg',
+      '/New folder/1 (31).jpeg',
+      '/New folder/1 (32).jpeg',
+      '/New folder/1 (29).jpeg',
+    ],
+    featured: false,
+    tags: ['Renovation', 'Commercial'],
+    size: '1,800 sq ft',
+    duration: '5 months',
   },
 ];
 
@@ -433,5 +546,5 @@ export const TEAM = [
 export const PROJECT_CATEGORIES = ['All', 'Residential', 'Commercial', 'Luxury', 'Renovation'];
 
 export const CTA_IMAGE = 'https://i.pinimg.com/736x/4a/fe/ae/4afeaeed917ddd4dbd280c3cdd0373ce.jpg';
-export const ABOUT_IMAGE = '/New folder/1 (15).jpeg';
+export const ABOUT_IMAGE = '/New/IMG_0679.jpeg';
 export const CONTACT_IMAGE = '/New folder/1 (7).jpeg';

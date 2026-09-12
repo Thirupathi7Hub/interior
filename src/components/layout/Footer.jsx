@@ -110,8 +110,16 @@ export default function Footer() {
           <p className="text-xs text-taupe/60 font-sans">
             &copy; {year} {STUDIO_INFO.brand}. All rights reserved.
           </p>
-          <p className="text-xs text-taupe/40 font-sans">
-            Design &amp; Craft — Tamil Nadu
+          <p className="text-xs text-taupe/60 font-sans">
+            Design &amp; Developed by{' '}
+            <a
+              href="https://thirumportfolio.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-taupe hover:text-gold transition-colors duration-200 underline underline-offset-2"
+            >
+              Thirupathi M - Freelancer
+            </a>
           </p>
         </div>
       </div>
